@@ -1,0 +1,8 @@
+replicas: 1
+
+image:
+    repository: postgres
+    tag: "15.4"
+
+database:
+    name: test

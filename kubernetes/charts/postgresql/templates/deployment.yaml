@@ -1,0 +1,49 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+    name: {{ .Release.Name }}-deployment
+    labels:
+        app: postgresql
+spec:
+    replicas: {{ .Values.replicas }}
+    selector:
+        matchLabels:
+            app: postgresql
+    template:
+        metadata:
+            labels:
+                app: postgresql
+        spec:
+            containers:
+                - name: {{ .Chart.Name }}
+                  image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}" # docker hub
+                  resources:
+                      requests: # usual resources
+                          cpu: "500m" # half of cpu core
+                          memory: "512M" # 512MB of RAM
+                      limits: # max resources
+                          cpu: "1" # one cpu core
+                          memory: "1G" # 1GB of RAM
+                  volumeMounts:
+                      - mountPath: /var/lib/postgres/data # internal volume
+                        name: {{ .Release.Name }}-data # external volume
+                  ports:
+                      - containerPort: 5432 # expose port
+                  envFrom:
+                      - configMapRef:
+                            name: {{ .Release.Name }}-configmap
+                  env:
+                      - name: POSTGRES_USER
+                        valueFrom:
+                            secretKeyRef:
+                                name: {{ .Release.Name }}-secret
+                                key: username
+                      - name: POSTGRES_PASSWORD
+                        valueFrom:
+                            secretKeyRef:
+                                name: {{ .Release.Name }}-secret
+                                key: password
+            volumes:
+                - name: {{ .Release.Name }}-data
+                  persistentVolumeClaim:
+                      claimName: {{ .Release.Name }}-claim
