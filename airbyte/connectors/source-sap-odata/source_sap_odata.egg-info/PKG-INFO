@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: source-sap-odata
+Version: 0.0.0
+Summary: Source implementation for Sap Odata.
+Author: Airbyte
+Author-email: contact@airbyte.io
+Provides-Extra: tests

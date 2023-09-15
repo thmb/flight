@@ -1,0 +1,3292 @@
+{
+    "name": "Production - MES",
+    "namespaceDefinition": "destination",
+    "namespaceFormat": "${SOURCE_NAMESPACE}",
+    "prefix": "mes_",
+    "status": "active",
+    "scheduleType": "manual",
+    "geography": "auto",
+    "breakingChange": false,
+    "notifySchemaChanges": false,
+    "notifySchemaChangesByEmail": false,
+    "nonBreakingChangesPreference": "ignore",
+    "operationIds": [],
+    "syncCatalog": {
+        "streams": [
+            {
+                "stream": {
+                    "name": "BVFR_Insumos_Kpis",
+                    "jsonSchema": {
+                        "type": "object",
+                        "properties": {
+                            "HCi": {
+                                "type": "number"
+                            },
+                            "H2SiF6": {
+                                "type": "number"
+                            },
+                            "Xantato": {
+                                "type": "number"
+                            },
+                            "BolasC410": {
+                                "type": "number"
+                            },
+                            "BolasC430": {
+                                "type": "number"
+                            },
+                            "Depressor": {
+                                "type": "number"
+                            },
+                            "Umectante": {
+                                "type": "number"
+                            },
+                            "Floculante": {
+                                "type": "number"
+                            },
+                            "NaOHLiquida": {
+                                "type": "number"
+                            },
+                            "LastModified": {
+                                "type": "string"
+                            },
+                            "SamplePeriod": {
+                                "type": "string"
+                            },
+                            "Antiespumante": {
+                                "type": "number"
+                            },
+                            "ColetorNiobio": {
+                                "type": "number"
+                            },
+                            "ColetorSilicatos": {
+                                "type": "number"
+                            },
+                            "ColetorCarbonatos": {
+                                "type": "number"
+                            }
+                        }
+                    },
+                    "supportedSyncModes": ["full_refresh", "incremental"],
+                    "defaultCursorField": [],
+                    "sourceDefinedPrimaryKey": [],
+                    "namespace": "dbo"
+                },
+                "config": {
+                    "syncMode": "full_refresh",
+                    "cursorField": [],
+                    "destinationSyncMode": "overwrite",
+                    "primaryKey": [],
+                    "aliasName": "BVFR_Insumos_Kpis",
+                    "selected": true,
+                    "fieldSelectionEnabled": false
+                }
+            },
+            {
+                "stream": {
+                    "name": "MinaBV_Despacho",
+                    "jsonSchema": {
+                        "type": "object",
+                        "properties": {
+                            "Ano": {
+                                "type": "number",
+                                "airbyte_type": "integer"
+                            },
+                            "Dia": {
+                                "type": "number",
+                                "airbyte_type": "integer"
+                            },
+                            "Mes": {
+                                "type": "number",
+                                "airbyte_type": "integer"
+                            },
+                            "Rssi": {
+                                "type": "string"
+                            },
+                            "Tara": {
+                                "type": "number"
+                            },
+                            "Teor": {
+                                "type": "number"
+                            },
+                            "Massa": {
+                                "type": "number"
+                            },
+                            "Volume": {
+                                "type": "number",
+                                "airbyte_type": "integer"
+                            },
+                            "Densidade": {
+                                "type": "number",
+                                "airbyte_type": "integer"
+                            },
+                            "Fim_Turno": {
+                                "type": "string"
+                            },
+                            "Nome_Cava": {
+                                "type": "string"
+                            },
+                            "Nome_Mina": {
+                                "type": "string"
+                            },
+                            "Nome_Zona": {
+                                "type": "string"
+                            },
+                            "Cod_Viagem": {
+                                "type": "number",
+                                "airbyte_type": "integer"
+                            },
+                            "Nome_Banco": {
+                                "type": "string"
+                            },
+                            "Nome_Frota": {
+                                "type": "string"
+                            },
+                            "Nome_Turno": {
+                                "type": "string"
+                            },
+                            "Tipo_Ciclo": {
+                                "type": "string"
+                            },
+                            "Massa_Umida": {
+                                "type": "number"
+                            },
+                            "Nome_Equipe": {
+                                "type": "string"
+                            },
+                            "Nome_Modelo": {
+                                "type": "string"
+                            },
+                            "Nome_Origem": {
+                                "type": "string"
+                            },
+                            "Inicio_turno": {
+                                "type": "string"
+                            },
+                            "Nome_Destino": {
+                                "type": "string"
+                            },
+                            "DMT_Mov_Cheio": {
+                                "type": "string"
+                            },
+                            "DMT_Mov_Vazio": {
+                                "type": "string"
+                            },
+                            "Nome_Operacao": {
+                                "type": "string"
+                            },
+                            "Nome_Operador": {
+                                "type": "string"
+                            },
+                            "Viagem_Manual": {
+                                "type": "string"
+                            },
+                            "Fluxo_Perfeito": {
+                                "type": "boolean"
+                            },
+                            "Massa_Prevista": {
+                                "type": "number"
+                            },
+                            "Nome_Litologia": {
+                                "type": "string"
+                            },
+                            "DT_Registro_Fim": {
+                                "type": "string"
+                            },
+                            "DT_Registro_Ini": {
+                                "type": "string"
+                            },
+                            "Destino_Indevido": {
+                                "type": "number",
+                                "airbyte_type": "integer"
+                            },
+                            "Nome_Equipamento": {
+                                "type": "string"
+                            },
+                            "Tempo_Ciclo_Hora": {
+                                "type": "number"
+                            },
+                            "DT_Registro_Turno": {
+                                "type": "string"
+                            },
+                            "Metros_Perfurados": {
+                                "type": "number"
+                            },
+                            "Nome_Tipo_Material": {
+                                "type": "string"
+                            },
+                            "Tempo_Ciclo_Minuto": {
+                                "type": "number"
+                            },
+                            "DT_Registro_Pesagem": {
+                                "type": "string"
+                            },
+                            "Faixa_DMT_Mob_Cheio": {
+                                "type": "string"
+                            },
+                            "Nome_Entidade_Origem": {
+                                "type": "string"
+                            },
+                            "Tempo_Ciclo_Segundos": {
+                                "type": "string"
+                            },
+                            "Latitude_Basculamento": {
+                                "type": "number"
+                            },
+                            "Latitude_Carregamento": {
+                                "type": "number"
+                            },
+                            "Nome_Entidade_Destino": {
+                                "type": "string"
+                            },
+                            "Nome_Entidade_Subarea": {
+                                "type": "string"
+                            },
+                            "Nome_Tipo_Equipamento": {
+                                "type": "string"
+                            },
+                            "Tempo_Ciclo_Formatado": {
+                                "type": "string"
+                            },
+                            "Longitude_Basculamento": {
+                                "type": "number"
+                            },
+                            "Longitude_Carregamento": {
+                                "type": "number"
+                            },
+                            "Nome_Equipamento_Utilizado": {
+                                "type": "string"
+                            },
+                            "Nome_Entidade_Subarea_Destino": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "supportedSyncModes": ["full_refresh", "incremental"],
+                    "defaultCursorField": [],
+                    "sourceDefinedPrimaryKey": [["Cod_Viagem"]],
+                    "namespace": "dbo"
+                },
+                "config": {
+                    "syncMode": "full_refresh",
+                    "cursorField": [],
+                    "destinationSyncMode": "overwrite",
+                    "primaryKey": [["Cod_Viagem"]],
+                    "aliasName": "MinaBV_Despacho",
+                    "selected": true,
+                    "fieldSelectionEnabled": false
+                }
+            },
+            {
+                "stream": {
+                    "name": "Britagem_KPIs",
+                    "jsonSchema": {
+                        "type": "object",
+                        "properties": {
+                            "DF": {
+                                "type": "number"
+                            },
+                            "HC": {
+                                "type": "number"
+                            },
+                            "HD": {
+                                "type": "number"
+                            },
+                            "HH": {
+                                "type": "number"
+                            },
+                            "HT": {
+                                "type": "number"
+                            },
+                            "UF": {
+                                "type": "number"
+                            },
+                            "OEE": {
+                                "type": "number"
+                            },
+                            "Turma": {
+                                "type": "string"
+                            },
+                            "ProdTBS": {
+                                "type": "number"
+                            },
+                            "Producao": {
+                                "type": "number"
+                            },
+                            "ProdNb2O5": {
+                                "type": "number"
+                            },
+                            "RejeitoTBS": {
+                                "type": "number"
+                            },
+                            "Agrupamento": {
+                                "type": "string"
+                            },
+                            "LastModified": {
+                                "type": "string"
+                            },
+                            "RejeitoNb2O5": {
+                                "type": "number"
+                            },
+                            "SamplePeriod": {
+                                "type": "string"
+                            },
+                            "AlimentacaoBS": {
+                                "type": "number"
+                            },
+                            "Nb2O5_Produto": {
+                                "type": "number"
+                            },
+                            "Produtividade": {
+                                "type": "number"
+                            },
+                            "AlimentacaoBsTotal": {
+                                "type": "number"
+                            },
+                            "Producao_Planejada": {
+                                "type": "number"
+                            },
+                            "Eficiencia_Producao": {
+                                "type": "number"
+                            },
+                            "Throughput_Planejado": {
+                                "type": "number"
+                            },
+                            "Rendimento_Operacional": {
+                                "type": "number"
+                            }
+                        }
+                    },
+                    "supportedSyncModes": ["full_refresh", "incremental"],
+                    "defaultCursorField": [],
+                    "sourceDefinedPrimaryKey": [],
+                    "namespace": "dbo"
+                },
+                "config": {
+                    "syncMode": "full_refresh",
+                    "cursorField": [],
+                    "destinationSyncMode": "overwrite",
+                    "primaryKey": [],
+                    "aliasName": "Britagem_KPIs",
+                    "selected": true,
+                    "fieldSelectionEnabled": false
+                }
+            },
+            {
+                "stream": {
+                    "name": "TA_Insumos_Kpis",
+                    "jsonSchema": {
+                        "type": "object",
+                        "properties": {
+                            "Amido": {
+                                "type": "number"
+                            },
+                            "Tela65": {
+                                "type": "number"
+                            },
+                            "Tela100": {
+                                "type": "number"
+                            },
+                            "Tela150": {
+                                "type": "number"
+                            },
+                            "Umectante": {
+                                "type": "number"
+                            },
+                            "BolasFerro": {
+                                "type": "number"
+                            },
+                            "Coagulante": {
+                                "type": "number"
+                            },
+                            "LastModified": {
+                                "type": "string"
+                            },
+                            "SamplePeriod": {
+                                "type": "string"
+                            },
+                            "SodaCaustica": {
+                                "type": "number"
+                            },
+                            "Antiespumante": {
+                                "type": "number"
+                            },
+                            "AcidoCloridrico": {
+                                "type": "number"
+                            },
+                            "ColetorPirocloro": {
+                                "type": "number"
+                            },
+                            "ColetorSilicatos": {
+                                "type": "number"
+                            },
+                            "PreConcPirocloro": {
+                                "type": "number"
+                            },
+                            "AcidoFluossilicico": {
+                                "type": "number"
+                            }
+                        }
+                    },
+                    "supportedSyncModes": ["full_refresh", "incremental"],
+                    "defaultCursorField": [],
+                    "sourceDefinedPrimaryKey": [],
+                    "namespace": "dbo"
+                },
+                "config": {
+                    "syncMode": "full_refresh",
+                    "cursorField": [],
+                    "destinationSyncMode": "overwrite",
+                    "primaryKey": [],
+                    "aliasName": "TA_Insumos_Kpis",
+                    "selected": true,
+                    "fieldSelectionEnabled": false
+                }
+            },
+            {
+                "stream": {
+                    "name": "BritagemLigas_Grossos_Movimentacoes",
+                    "jsonSchema": {
+                        "type": "object",
+                        "properties": {
+                            "C": {
+                                "type": "number"
+                            },
+                            "P": {
+                                "type": "number"
+                            },
+                            "S": {
+                                "type": "number"
+                            },
+                            "Al": {
+                                "type": "number"
+                            },
+                            "Fe": {
+                                "type": "number"
+                            },
+                            "Nb": {
+                                "type": "number"
+                            },
+                            "Pb": {
+                                "type": "number"
+                            },
+                            "Si": {
+                                "type": "number"
+                            },
+                            "Ti": {
+                                "type": "number"
+                            },
+                            "Lote": {
+                                "type": "string"
+                            },
+                            "Tipo": {
+                                "type": "string"
+                            },
+                            "Massa": {
+                                "type": "number"
+                            },
+                            "MassaNb": {
+                                "type": "number"
+                            },
+                            "Estoque_C": {
+                                "type": "number"
+                            },
+                            "Estoque_P": {
+                                "type": "number"
+                            },
+                            "Estoque_S": {
+                                "type": "number"
+                            },
+                            "Estoque_Al": {
+                                "type": "number"
+                            },
+                            "Estoque_Fe": {
+                                "type": "number"
+                            },
+                            "Estoque_Nb": {
+                                "type": "number"
+                            },
+                            "Estoque_Pb": {
+                                "type": "number"
+                            },
+                            "Estoque_Si": {
+                                "type": "number"
+                            },
+                            "Estoque_Ti": {
+                                "type": "number"
+                            },
+                            "LastModified": {
+                                "type": "string"
+                            },
+                            "SamplePeriod": {
+                                "type": "string"
+                            },
+                            "Estoque_Massa": {
+                                "type": "number"
+                            },
+                            "Estoque_MassaNb": {
+                                "type": "number"
+                            }
+                        }
+                    },
+                    "supportedSyncModes": ["full_refresh", "incremental"],
+                    "defaultCursorField": [],
+                    "sourceDefinedPrimaryKey": [],
+                    "namespace": "dbo"
+                },
+                "config": {
+                    "syncMode": "full_refresh",
+                    "cursorField": [],
+                    "destinationSyncMode": "overwrite",
+                    "primaryKey": [],
+                    "aliasName": "BritagemLigas_Grossos_Movimentacoes",
+                    "selected": true,
+                    "fieldSelectionEnabled": false
+                }
+            },
+            {
+                "stream": {
+                    "name": "BV_Insumos_Kpis",
+                    "jsonSchema": {
+                        "type": "object",
+                        "properties": {
+                            "Amido": {
+                                "type": "number"
+                            },
+                            "NOP_BS4": {
+                                "type": "number"
+                            },
+                            "NOP_BS6": {
+                                "type": "number"
+                            },
+                            "NOP_CS2": {
+                                "type": "number"
+                            },
+                            "NOP_NB1": {
+                                "type": "number"
+                            },
+                            "PesoBarra": {
+                                "type": "number"
+                            },
+                            "Umectante": {
+                                "type": "number"
+                            },
+                            "BolasFerro": {
+                                "type": "number"
+                            },
+                            "LastModified": {
+                                "type": "string"
+                            },
+                            "NOP_Flotinor": {
+                                "type": "number"
+                            },
+                            "NOP_Silicato": {
+                                "type": "number"
+                            },
+                            "SamplePeriod": {
+                                "type": "string"
+                            },
+                            "SodaCaustica": {
+                                "type": "number"
+                            },
+                            "Antiespumante": {
+                                "type": "number"
+                            },
+                            "NOP_Lioflot567": {
+                                "type": "number"
+                            },
+                            "AcidoCloridrico": {
+                                "type": "number"
+                            },
+                            "ColetorSulfetos": {
+                                "type": "number"
+                            },
+                            "NOP_AmilXantato": {
+                                "type": "number"
+                            },
+                            "ColetorPirocloro": {
+                                "type": "number"
+                            },
+                            "ColetorSilicatos": {
+                                "type": "number"
+                            },
+                            "ColetorCarbonatos": {
+                                "type": "number"
+                            },
+                            "NOP_Antiespumante": {
+                                "type": "number"
+                            },
+                            "AcidoFluossilicico": {
+                                "type": "number"
+                            }
+                        }
+                    },
+                    "supportedSyncModes": ["full_refresh", "incremental"],
+                    "defaultCursorField": [],
+                    "sourceDefinedPrimaryKey": [],
+                    "namespace": "dbo"
+                },
+                "config": {
+                    "syncMode": "full_refresh",
+                    "cursorField": [],
+                    "destinationSyncMode": "overwrite",
+                    "primaryKey": [],
+                    "aliasName": "BV_Insumos_Kpis",
+                    "selected": true,
+                    "fieldSelectionEnabled": false
+                }
+            },
+            {
+                "stream": {
+                    "name": "Lixiviacao_CFs",
+                    "jsonSchema": {
+                        "type": "object",
+                        "properties": {
+                            "C": {
+                                "type": "number"
+                            },
+                            "S": {
+                                "type": "number"
+                            },
+                            "CF": {
+                                "type": "string"
+                            },
+                            "PR": {
+                                "type": "number"
+                            },
+                            "BaO": {
+                                "type": "number"
+                            },
+                            "CaO": {
+                                "type": "number"
+                            },
+                            "MgO": {
+                                "type": "number"
+                            },
+                            "PbO": {
+                                "type": "number"
+                            },
+                            "SrO": {
+                                "type": "number"
+                            },
+                            "MnO2": {
+                                "type": "number"
+                            },
+                            "Na2O": {
+                                "type": "number"
+                            },
+                            "P2O5": {
+                                "type": "number"
+                            },
+                            "SiO2": {
+                                "type": "number"
+                            },
+                            "ThO2": {
+                                "type": "number"
+                            },
+                            "TiO2": {
+                                "type": "number"
+                            },
+                            "U3O8": {
+                                "type": "number"
+                            },
+                            "Al2O3": {
+                                "type": "number"
+                            },
+                            "Fe2O3": {
+                                "type": "number"
+                            },
+                            "Nb2O5": {
+                                "type": "number"
+                            },
+                            "Ta2O5": {
+                                "type": "number"
+                            },
+                            "MassaCF": {
+                                "type": "number"
+                            },
+                            "DataEnvioSAP": {
+                                "type": "string"
+                            },
+                            "LastModified": {
+                                "type": "string"
+                            },
+                            "SamplePeriod": {
+                                "type": "string"
+                            },
+                            "Producao_Nb2O5": {
+                                "type": "number"
+                            },
+                            "MassaCF_Contabil": {
+                                "type": "number"
+                            },
+                            "QualidadeEstimada": {
+                                "type": "boolean"
+                            }
+                        }
+                    },
+                    "supportedSyncModes": ["full_refresh", "incremental"],
+                    "defaultCursorField": [],
+                    "sourceDefinedPrimaryKey": [],
+                    "namespace": "dbo"
+                },
+                "config": {
+                    "syncMode": "full_refresh",
+                    "cursorField": [],
+                    "destinationSyncMode": "overwrite",
+                    "primaryKey": [],
+                    "aliasName": "Lixiviacao_CFs",
+                    "selected": true,
+                    "fieldSelectionEnabled": false
+                }
+            },
+            {
+                "stream": {
+                    "name": "Movimentacao_Mina_Usinas",
+                    "jsonSchema": {
+                        "type": "object",
+                        "properties": {
+                            "Origem": {
+                                "type": "string"
+                            },
+                            "Destino": {
+                                "type": "string"
+                            },
+                            "MassaTBS": {
+                                "type": "number"
+                            },
+                            "DataEnvioSAP": {
+                                "type": "string"
+                            },
+                            "LastModified": {
+                                "type": "string"
+                            },
+                            "SamplePeriod": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "supportedSyncModes": ["full_refresh", "incremental"],
+                    "defaultCursorField": [],
+                    "sourceDefinedPrimaryKey": [],
+                    "namespace": "dbo"
+                },
+                "config": {
+                    "syncMode": "full_refresh",
+                    "cursorField": [],
+                    "destinationSyncMode": "overwrite",
+                    "primaryKey": [],
+                    "aliasName": "Movimentacao_Mina_Usinas",
+                    "selected": true,
+                    "fieldSelectionEnabled": false
+                }
+            },
+            {
+                "stream": {
+                    "name": "BVFR_KPIs",
+                    "jsonSchema": {
+                        "type": "object",
+                        "properties": {
+                            "DF": {
+                                "type": "number"
+                            },
+                            "HC": {
+                                "type": "number"
+                            },
+                            "HD": {
+                                "type": "number"
+                            },
+                            "HH": {
+                                "type": "number"
+                            },
+                            "HT": {
+                                "type": "number"
+                            },
+                            "UF": {
+                                "type": "number"
+                            },
+                            "OEE": {
+                                "type": "number"
+                            },
+                            "TeorS": {
+                                "type": "number"
+                            },
+                            "Turma": {
+                                "type": "string"
+                            },
+                            "HOM_HT": {
+                                "type": "number"
+                            },
+                            "MassaS": {
+                                "type": "number"
+                            },
+                            "C510_DM": {
+                                "type": "number"
+                            },
+                            "C520_DM": {
+                                "type": "number"
+                            },
+                            "C540_DM": {
+                                "type": "number"
+                            },
+                            "TeorBaO": {
+                                "type": "number"
+                            },
+                            "ProdConc": {
+                                "type": "number"
+                            },
+                            "Producao": {
+                                "type": "number"
+                            },
+                            "TeorP2O5": {
+                                "type": "number"
+                            },
+                            "TeorSiO2": {
+                                "type": "number"
+                            },
+                            "TeorTiO2": {
+                                "type": "number"
+                            },
+                            "C510_Teor": {
+                                "type": "number"
+                            },
+                            "C520_Teor": {
+                                "type": "number"
+                            },
+                            "C540_Teor": {
+                                "type": "number"
+                            },
+                            "ColetorNb": {
+                                "type": "number"
+                            },
+                            "Depressor": {
+                                "type": "number"
+                            },
+                            "MassaP2O5": {
+                                "type": "number"
+                            },
+                            "MassaSiO2": {
+                                "type": "number"
+                            },
+                            "MassaTiO2": {
+                                "type": "number"
+                            },
+                            "TeorNb2O5": {
+                                "type": "number"
+                            },
+                            "TeorAlim_S": {
+                                "type": "number"
+                            },
+                            "TeorSiO2PP": {
+                                "type": "number"
+                            },
+                            "Agrupamento": {
+                                "type": "string"
+                            },
+                            "ConcC530_DM": {
+                                "type": "number"
+                            },
+                            "MassaSiO2PP": {
+                                "type": "number"
+                            },
+                            "Recuperacao": {
+                                "type": "number"
+                            },
+                            "ConcFinal_DM": {
+                                "type": "number"
+                            },
+                            "DataEnvioSAP": {
+                                "type": "string"
+                            },
+                            "DesagC520_DM": {
+                                "type": "number"
+                            },
+                            "LastModified": {
+                                "type": "string"
+                            },
+                            "SamplePeriod": {
+                                "type": "string"
+                            },
+                            "TeorAlim_BaO": {
+                                "type": "number"
+                            },
+                            "TeorAlim_CaO": {
+                                "type": "number"
+                            },
+                            "TeorAlim_MgO": {
+                                "type": "number"
+                            },
+                            "TeorOreGrade": {
+                                "type": "number"
+                            },
+                            "ColetorSilico": {
+                                "type": "number"
+                            },
+                            "ConcC530_Teor": {
+                                "type": "number"
+                            },
+                            "Produtividade": {
+                                "type": "number"
+                            },
+                            "TeorAlim_P2O5": {
+                                "type": "number"
+                            },
+                            "TeorAlim_SiO2": {
+                                "type": "number"
+                            },
+                            "TeorAlim_TiO2": {
+                                "type": "number"
+                            },
+                            "Throughput_th": {
+                                "type": "number"
+                            },
+                            "ConcFinal_Teor": {
+                                "type": "number"
+                            },
+                            "DesagC520_Teor": {
+                                "type": "number"
+                            },
+                            "ExpurgoMB01_DM": {
+                                "type": "number"
+                            },
+                            "ProducaoC310BS": {
+                                "type": "number"
+                            },
+                            "RejeitoC550_DM": {
+                                "type": "number"
+                            },
+                            "TeorAlim_Al2O3": {
+                                "type": "number"
+                            },
+                            "TeorAlim_Fe2O3": {
+                                "type": "number"
+                            },
+                            "MassaSecaSiO2PP": {
+                                "type": "number"
+                            },
+                            "AlimentacaoNb2O5": {
+                                "type": "number"
+                            },
+                            "ColetorCarbonato": {
+                                "type": "number"
+                            },
+                            "ExpurgoMB01_Teor": {
+                                "type": "number"
+                            },
+                            "RejeitoC550_Teor": {
+                                "type": "number"
+                            },
+                            "AlimentacaoBs_Total": {
+                                "type": "number"
+                            },
+                            "Eficiencia_Producao": {
+                                "type": "number"
+                            },
+                            "MassaBS_SiO2OffSpec": {
+                                "type": "number"
+                            },
+                            "OverSizePeneiras_DM": {
+                                "type": "number"
+                            },
+                            "AlimentacaoBs_Perdas": {
+                                "type": "number"
+                            },
+                            "OverSizePeneiras_Teor": {
+                                "type": "number"
+                            },
+                            "ThroughputWithQuality": {
+                                "type": "number"
+                            },
+                            "Percentual_SiO2OffSpec": {
+                                "type": "number"
+                            },
+                            "Rendimento_Operacional": {
+                                "type": "number"
+                            }
+                        }
+                    },
+                    "supportedSyncModes": ["full_refresh", "incremental"],
+                    "defaultCursorField": [],
+                    "sourceDefinedPrimaryKey": [],
+                    "namespace": "dbo"
+                },
+                "config": {
+                    "syncMode": "full_refresh",
+                    "cursorField": [],
+                    "destinationSyncMode": "overwrite",
+                    "primaryKey": [],
+                    "aliasName": "BVFR_KPIs",
+                    "selected": true,
+                    "fieldSelectionEnabled": false
+                }
+            },
+            {
+                "stream": {
+                    "name": "Mina_BV_KPIs",
+                    "jsonSchema": {
+                        "type": "object",
+                        "properties": {
+                            "LastModified": {
+                                "type": "string"
+                            },
+                            "SamplePeriod": {
+                                "type": "string"
+                            },
+                            "Esteril_Total": {
+                                "type": "number"
+                            },
+                            "MinerioRochaFresca_Lavrado": {
+                                "type": "number"
+                            },
+                            "MinerioRochaFresca_Transp_BritBVFR": {
+                                "type": "number"
+                            },
+                            "MinerioRochaFresca_Transp_BritMovel": {
+                                "type": "number"
+                            }
+                        }
+                    },
+                    "supportedSyncModes": ["full_refresh", "incremental"],
+                    "defaultCursorField": [],
+                    "sourceDefinedPrimaryKey": [],
+                    "namespace": "dbo"
+                },
+                "config": {
+                    "syncMode": "full_refresh",
+                    "cursorField": [],
+                    "destinationSyncMode": "overwrite",
+                    "primaryKey": [],
+                    "aliasName": "Mina_BV_KPIs",
+                    "selected": true,
+                    "fieldSelectionEnabled": false
+                }
+            },
+            {
+                "stream": {
+                    "name": "Metalurgia_Reacoes",
+                    "jsonSchema": {
+                        "type": "object",
+                        "properties": {
+                            "C": {
+                                "type": "number"
+                            },
+                            "P": {
+                                "type": "number"
+                            },
+                            "Al": {
+                                "type": "number"
+                            },
+                            "Fe": {
+                                "type": "number"
+                            },
+                            "Mn": {
+                                "type": "number"
+                            },
+                            "Nb": {
+                                "type": "number"
+                            },
+                            "PR": {
+                                "type": "number"
+                            },
+                            "Pb": {
+                                "type": "number"
+                            },
+                            "Si": {
+                                "type": "number"
+                            },
+                            "Sn": {
+                                "type": "number"
+                            },
+                            "Ta": {
+                                "type": "number"
+                            },
+                            "Ti": {
+                                "type": "number"
+                            },
+                            "BaO": {
+                                "type": "number"
+                            },
+                            "CFs": {
+                                "type": "string"
+                            },
+                            "CaO": {
+                                "type": "number"
+                            },
+                            "MgO": {
+                                "type": "number"
+                            },
+                            "PbO": {
+                                "type": "number"
+                            },
+                            "SrO": {
+                                "type": "number"
+                            },
+                            "MnO2": {
+                                "type": "number"
+                            },
+                            "Na2O": {
+                                "type": "number"
+                            },
+                            "P2O5": {
+                                "type": "number"
+                            },
+                            "SiO2": {
+                                "type": "number"
+                            },
+                            "ThO2": {
+                                "type": "number"
+                            },
+                            "TiO2": {
+                                "type": "number"
+                            },
+                            "U3O8": {
+                                "type": "number"
+                            },
+                            "Al2O3": {
+                                "type": "number"
+                            },
+                            "Fe2O3": {
+                                "type": "number"
+                            },
+                            "Nb2O5": {
+                                "type": "number"
+                            },
+                            "Ta2O5": {
+                                "type": "number"
+                            },
+                            "TeorC": {
+                                "type": "number"
+                            },
+                            "AlFino": {
+                                "type": "number"
+                            },
+                            "Oxidos": {
+                                "type": "number"
+                            },
+                            "Reacao": {
+                                "type": "string"
+                            },
+                            "SChile": {
+                                "type": "number"
+                            },
+                            "SPedra": {
+                                "type": "number"
+                            },
+                            "Apurada": {
+                                "type": "boolean"
+                            },
+                            "Britado": {
+                                "type": "boolean"
+                            },
+                            "PoFerro": {
+                                "type": "number"
+                            },
+                            "Pregado": {
+                                "type": "boolean"
+                            },
+                            "Retorno": {
+                                "type": "number"
+                            },
+                            "SReacao": {
+                                "type": "number"
+                            },
+                            "AlGrosso": {
+                                "type": "number"
+                            },
+                            "BlueDust": {
+                                "type": "number"
+                            },
+                            "DefeitoC": {
+                                "type": "number"
+                            },
+                            "DefeitoP": {
+                                "type": "number"
+                            },
+                            "DefeitoS": {
+                                "type": "number"
+                            },
+                            "Fluorita": {
+                                "type": "number"
+                            },
+                            "MassaCFs": {
+                                "type": "number"
+                            },
+                            "CalVirgem": {
+                                "type": "number"
+                            },
+                            "DefeitoAl": {
+                                "type": "number"
+                            },
+                            "DefeitoNb": {
+                                "type": "number"
+                            },
+                            "DefeitoPb": {
+                                "type": "number"
+                            },
+                            "DefeitoSi": {
+                                "type": "number"
+                            },
+                            "ExcessoAl": {
+                                "type": "number"
+                            },
+                            "NbEscoria": {
+                                "type": "number"
+                            },
+                            "ProducaoNb": {
+                                "type": "number"
+                            },
+                            "Transbordo": {
+                                "type": "boolean"
+                            },
+                            "AlGranulado": {
+                                "type": "number"
+                            },
+                            "Recuperacao": {
+                                "type": "number"
+                            },
+                            "TempoReacao": {
+                                "type": "number"
+                            },
+                            "DefeitoBotao": {
+                                "type": "number"
+                            },
+                            "InicioReacao": {
+                                "type": "string"
+                            },
+                            "LastModified": {
+                                "type": "string"
+                            },
+                            "MassaNbPedra": {
+                                "type": "number"
+                            },
+                            "MassaRefusao": {
+                                "type": "number"
+                            },
+                            "RetornoURLNb": {
+                                "type": "number"
+                            },
+                            "CalorLiberado": {
+                                "type": "number"
+                            },
+                            "FatorAluminio": {
+                                "type": "number"
+                            },
+                            "FatorCorrecao": {
+                                "type": "number"
+                            },
+                            "Gran_Ref_Liga": {
+                                "type": "string"
+                            },
+                            "SChile_Pesado": {
+                                "type": "number"
+                            },
+                            "TempoVazamento": {
+                                "type": "number"
+                            },
+                            "AlGrosso_Pesado": {
+                                "type": "number"
+                            },
+                            "BlueDust_Pesado": {
+                                "type": "number"
+                            },
+                            "MassaBotao_BLIG": {
+                                "type": "number"
+                            },
+                            "MassaTotalPedra": {
+                                "type": "number"
+                            },
+                            "TeorTeoricoLiga": {
+                                "type": "number"
+                            },
+                            "SChile_Diferenca": {
+                                "type": "number"
+                            },
+                            "TeorNbRetornoURL": {
+                                "type": "number"
+                            },
+                            "FornecedorAl_Fino": {
+                                "type": "string"
+                            },
+                            "Gran_Ref_Pregados": {
+                                "type": "string"
+                            },
+                            "ProducaoNbApurada": {
+                                "type": "number"
+                            },
+                            "RecuperacaoSemURL": {
+                                "type": "number"
+                            },
+                            "AlGrosso_Diferenca": {
+                                "type": "number"
+                            },
+                            "BlueDust_Diferenca": {
+                                "type": "number"
+                            },
+                            "MassaNbRefPregados": {
+                                "type": "number"
+                            },
+                            "TemperaturaEscoria": {
+                                "type": "number"
+                            },
+                            "TempoRetiradaPedra": {
+                                "type": "number"
+                            },
+                            "FornecedorAl_Grosso": {
+                                "type": "string"
+                            },
+                            "Massa_Ref_Liga_Fino": {
+                                "type": "number"
+                            },
+                            "ResfriamentoForcado": {
+                                "type": "string"
+                            },
+                            "DesvioMassaBotaoLiga": {
+                                "type": "number"
+                            },
+                            "BotaoLigaPresoCadinho": {
+                                "type": "number"
+                            },
+                            "EficienciaMetalurgica": {
+                                "type": "number"
+                            },
+                            "EnviarValorTeoricoSAP": {
+                                "type": "boolean"
+                            },
+                            "MassaBotao_Metalurgia": {
+                                "type": "number"
+                            },
+                            "Massa_Ref_Liga_Grosso": {
+                                "type": "number"
+                            },
+                            "ProducaoFeNbDescontada": {
+                                "type": "number"
+                            },
+                            "EscoriaRicaPresaCadinho": {
+                                "type": "number"
+                            },
+                            "Massa_Ref_Pregados_Fino": {
+                                "type": "number"
+                            },
+                            "TempoDescascamentoPedra": {
+                                "type": "number"
+                            },
+                            "Massa_Ref_Pregados_Grosso": {
+                                "type": "number"
+                            }
+                        }
+                    },
+                    "supportedSyncModes": ["full_refresh", "incremental"],
+                    "defaultCursorField": [],
+                    "sourceDefinedPrimaryKey": [],
+                    "namespace": "dbo"
+                },
+                "config": {
+                    "syncMode": "full_refresh",
+                    "cursorField": [],
+                    "destinationSyncMode": "overwrite",
+                    "primaryKey": [],
+                    "aliasName": "Metalurgia_Reacoes",
+                    "selected": true,
+                    "fieldSelectionEnabled": false
+                }
+            },
+            {
+                "stream": {
+                    "name": "Metalurgia_KPIs",
+                    "jsonSchema": {
+                        "type": "object",
+                        "properties": {
+                            "C": {
+                                "type": "number"
+                            },
+                            "P": {
+                                "type": "number"
+                            },
+                            "Al": {
+                                "type": "number"
+                            },
+                            "DF": {
+                                "type": "number"
+                            },
+                            "Fe": {
+                                "type": "number"
+                            },
+                            "HC": {
+                                "type": "number"
+                            },
+                            "HD": {
+                                "type": "number"
+                            },
+                            "HH": {
+                                "type": "number"
+                            },
+                            "HT": {
+                                "type": "number"
+                            },
+                            "Mn": {
+                                "type": "number"
+                            },
+                            "Nb": {
+                                "type": "number"
+                            },
+                            "PR": {
+                                "type": "number"
+                            },
+                            "Pb": {
+                                "type": "number"
+                            },
+                            "RO": {
+                                "type": "number"
+                            },
+                            "Si": {
+                                "type": "number"
+                            },
+                            "Sn": {
+                                "type": "number"
+                            },
+                            "Ta": {
+                                "type": "number"
+                            },
+                            "Ti": {
+                                "type": "number"
+                            },
+                            "UF": {
+                                "type": "number"
+                            },
+                            "BaO": {
+                                "type": "number"
+                            },
+                            "CaO": {
+                                "type": "number"
+                            },
+                            "MgO": {
+                                "type": "number"
+                            },
+                            "PbO": {
+                                "type": "number"
+                            },
+                            "SrO": {
+                                "type": "number"
+                            },
+                            "MnO2": {
+                                "type": "number"
+                            },
+                            "Na2O": {
+                                "type": "number"
+                            },
+                            "P2O5": {
+                                "type": "number"
+                            },
+                            "SiO2": {
+                                "type": "number"
+                            },
+                            "ThO2": {
+                                "type": "number"
+                            },
+                            "TiO2": {
+                                "type": "number"
+                            },
+                            "U3O8": {
+                                "type": "number"
+                            },
+                            "Al2O3": {
+                                "type": "number"
+                            },
+                            "Fe2O3": {
+                                "type": "number"
+                            },
+                            "Nb2O5": {
+                                "type": "number"
+                            },
+                            "Ta2O5": {
+                                "type": "number"
+                            },
+                            "TeorC": {
+                                "type": "number"
+                            },
+                            "Turma": {
+                                "type": "string"
+                            },
+                            "AlFino": {
+                                "type": "number"
+                            },
+                            "Oxidos": {
+                                "type": "number"
+                            },
+                            "SChile": {
+                                "type": "number"
+                            },
+                            "SPedra": {
+                                "type": "number"
+                            },
+                            "Britado": {
+                                "type": "number",
+                                "airbyte_type": "integer"
+                            },
+                            "PoFerro": {
+                                "type": "number"
+                            },
+                            "Pregado": {
+                                "type": "number",
+                                "airbyte_type": "integer"
+                            },
+                            "Retorno": {
+                                "type": "number"
+                            },
+                            "SReacao": {
+                                "type": "number"
+                            },
+                            "AlGrosso": {
+                                "type": "number"
+                            },
+                            "Apuradas": {
+                                "type": "number",
+                                "airbyte_type": "integer"
+                            },
+                            "BlueDust": {
+                                "type": "number"
+                            },
+                            "DefeitoC": {
+                                "type": "number"
+                            },
+                            "DefeitoP": {
+                                "type": "number"
+                            },
+                            "DefeitoS": {
+                                "type": "number"
+                            },
+                            "Fluorita": {
+                                "type": "number"
+                            },
+                            "MassaCFs": {
+                                "type": "number"
+                            },
+                            "nReacoes": {
+                                "type": "number",
+                                "airbyte_type": "integer"
+                            },
+                            "CalVirgem": {
+                                "type": "number"
+                            },
+                            "DefeitoAl": {
+                                "type": "number"
+                            },
+                            "DefeitoNb": {
+                                "type": "number"
+                            },
+                            "DefeitoPb": {
+                                "type": "number"
+                            },
+                            "DefeitoSi": {
+                                "type": "number"
+                            },
+                            "ExcessoAl": {
+                                "type": "number"
+                            },
+                            "NbEscoria": {
+                                "type": "number"
+                            },
+                            "ProducaoNb": {
+                                "type": "number"
+                            },
+                            "Transbordo": {
+                                "type": "number",
+                                "airbyte_type": "integer"
+                            },
+                            "Agrupamento": {
+                                "type": "string"
+                            },
+                            "AlGranulado": {
+                                "type": "number"
+                            },
+                            "Recuperacao": {
+                                "type": "number"
+                            },
+                            "TempoReacao": {
+                                "type": "number"
+                            },
+                            "DefeitoBotao": {
+                                "type": "number"
+                            },
+                            "LastModified": {
+                                "type": "string"
+                            },
+                            "MassaNbPedra": {
+                                "type": "number"
+                            },
+                            "MassaRefusao": {
+                                "type": "number"
+                            },
+                            "RetornoURLNb": {
+                                "type": "number"
+                            },
+                            "SamplePeriod": {
+                                "type": "string"
+                            },
+                            "CalorLiberado": {
+                                "type": "number"
+                            },
+                            "DesvioBalanca": {
+                                "type": "number"
+                            },
+                            "FatorAluminio": {
+                                "type": "number"
+                            },
+                            "SChile_Pesado": {
+                                "type": "number"
+                            },
+                            "TempoVazamento": {
+                                "type": "number"
+                            },
+                            "AlGrosso_Pesado": {
+                                "type": "number"
+                            },
+                            "BlueDust_Pesado": {
+                                "type": "number"
+                            },
+                            "MassaBotao_BLIG": {
+                                "type": "number"
+                            },
+                            "MassaTotalPedra": {
+                                "type": "number"
+                            },
+                            "MediaProducaoNb": {
+                                "type": "number"
+                            },
+                            "TeorTeoricoLiga": {
+                                "type": "number"
+                            },
+                            "SChile_Diferenca": {
+                                "type": "number"
+                            },
+                            "TeorNbRetornoURL": {
+                                "type": "number"
+                            },
+                            "ProducaoNbApurada": {
+                                "type": "number"
+                            },
+                            "RecuperacaoSemURL": {
+                                "type": "number"
+                            },
+                            "AlGrosso_Diferenca": {
+                                "type": "number"
+                            },
+                            "BlueDust_Diferenca": {
+                                "type": "number"
+                            },
+                            "MassaNbRefPregados": {
+                                "type": "number"
+                            },
+                            "RecuperacaoApurada": {
+                                "type": "number"
+                            },
+                            "TemperaturaEscoria": {
+                                "type": "number"
+                            },
+                            "TempoRetiradaPedra": {
+                                "type": "number"
+                            },
+                            "DesvioMassaBotaoLiga": {
+                                "type": "number"
+                            },
+                            "BotaoLigaPresoCadinho": {
+                                "type": "number"
+                            },
+                            "EficienciaMetalurgica": {
+                                "type": "number"
+                            },
+                            "MassaBotao_Metalurgia": {
+                                "type": "number"
+                            },
+                            "QtdBotoesMassaApurada": {
+                                "type": "number",
+                                "airbyte_type": "integer"
+                            },
+                            "ProducaoFeNbDescontada": {
+                                "type": "number"
+                            },
+                            "EscoriaRicaPresaCadinho": {
+                                "type": "number"
+                            },
+                            "TempoDescascamentoPedra": {
+                                "type": "number"
+                            },
+                            "SChile_SimuladoComPesagem": {
+                                "type": "number"
+                            },
+                            "MediaMassaBotao_Metalurgia": {
+                                "type": "number"
+                            },
+                            "AlGrosso_SimuladoComPesagem": {
+                                "type": "number"
+                            },
+                            "BlueDust_SimuladoComPesagem": {
+                                "type": "number"
+                            }
+                        }
+                    },
+                    "supportedSyncModes": ["full_refresh", "incremental"],
+                    "defaultCursorField": [],
+                    "sourceDefinedPrimaryKey": [],
+                    "namespace": "dbo"
+                },
+                "config": {
+                    "syncMode": "full_refresh",
+                    "cursorField": [],
+                    "destinationSyncMode": "overwrite",
+                    "primaryKey": [],
+                    "aliasName": "Metalurgia_KPIs",
+                    "selected": true,
+                    "fieldSelectionEnabled": false
+                }
+            },
+            {
+                "stream": {
+                    "name": "Lixiviacao_KPIs",
+                    "jsonSchema": {
+                        "type": "object",
+                        "properties": {
+                            "S": {
+                                "type": "number"
+                            },
+                            "DF": {
+                                "type": "number"
+                            },
+                            "HH": {
+                                "type": "number"
+                            },
+                            "HT": {
+                                "type": "number"
+                            },
+                            "PR": {
+                                "type": "number"
+                            },
+                            "UF": {
+                                "type": "number"
+                            },
+                            "BaO": {
+                                "type": "number"
+                            },
+                            "CaO": {
+                                "type": "number"
+                            },
+                            "MgO": {
+                                "type": "number"
+                            },
+                            "PbO": {
+                                "type": "number"
+                            },
+                            "SrO": {
+                                "type": "number"
+                            },
+                            "MnO2": {
+                                "type": "number"
+                            },
+                            "Na2O": {
+                                "type": "number"
+                            },
+                            "P2O5": {
+                                "type": "number"
+                            },
+                            "SiO2": {
+                                "type": "number"
+                            },
+                            "ThO2": {
+                                "type": "number"
+                            },
+                            "TiO2": {
+                                "type": "number"
+                            },
+                            "U3O8": {
+                                "type": "number"
+                            },
+                            "Al2O3": {
+                                "type": "number"
+                            },
+                            "Fe2O3": {
+                                "type": "number"
+                            },
+                            "Nb2O5": {
+                                "type": "number"
+                            },
+                            "Ta2O5": {
+                                "type": "number"
+                            },
+                            "Turma": {
+                                "type": "string"
+                            },
+                            "BV_HCL": {
+                                "type": "number"
+                            },
+                            "TA_HCL": {
+                                "type": "number"
+                            },
+                            "BV_NaOH": {
+                                "type": "number"
+                            },
+                            "MassaCF": {
+                                "type": "number"
+                            },
+                            "TA_NaOH": {
+                                "type": "number"
+                            },
+                            "BVFR_HCL": {
+                                "type": "number"
+                            },
+                            "BVFR_NaOH": {
+                                "type": "number"
+                            },
+                            "Agrupamento": {
+                                "type": "string"
+                            },
+                            "ProducaoLix": {
+                                "type": "number"
+                            },
+                            "DataEnvioSAP": {
+                                "type": "string"
+                            },
+                            "LastModified": {
+                                "type": "string"
+                            },
+                            "SamplePeriod": {
+                                "type": "string"
+                            },
+                            "Throughput_BS": {
+                                "type": "number"
+                            },
+                            "Throughput_BU": {
+                                "type": "number"
+                            },
+                            "ProducaoUsinas": {
+                                "type": "number"
+                            },
+                            "Producao_Nb2O5": {
+                                "type": "number"
+                            },
+                            "RecuperacaoLix": {
+                                "type": "number"
+                            },
+                            "ConsumoOleoTotal": {
+                                "type": "number"
+                            },
+                            "Alimentacao_BS_Total": {
+                                "type": "number"
+                            },
+                            "Alimentacao_BU_Total": {
+                                "type": "number"
+                            },
+                            "Quantidade_CFs_Embalados": {
+                                "type": "number",
+                                "airbyte_type": "integer"
+                            }
+                        }
+                    },
+                    "supportedSyncModes": ["full_refresh", "incremental"],
+                    "defaultCursorField": [],
+                    "sourceDefinedPrimaryKey": [],
+                    "namespace": "dbo"
+                },
+                "config": {
+                    "syncMode": "full_refresh",
+                    "cursorField": [],
+                    "destinationSyncMode": "overwrite",
+                    "primaryKey": [],
+                    "aliasName": "Lixiviacao_KPIs",
+                    "selected": true,
+                    "fieldSelectionEnabled": false
+                }
+            },
+            {
+                "stream": {
+                    "name": "URL_Estoque",
+                    "jsonSchema": {
+                        "type": "object",
+                        "properties": {
+                            "EstoqueAtual": {
+                                "type": "number"
+                            },
+                            "LastModified": {
+                                "type": "string"
+                            },
+                            "SamplePeriod": {
+                                "type": "string"
+                            },
+                            "MassaSaidaEstoque": {
+                                "type": "number"
+                            },
+                            "MassaEntradaEstoque": {
+                                "type": "number"
+                            },
+                            "EstoqueAtualAtualizado": {
+                                "type": "number"
+                            }
+                        }
+                    },
+                    "supportedSyncModes": ["full_refresh", "incremental"],
+                    "defaultCursorField": [],
+                    "sourceDefinedPrimaryKey": [],
+                    "namespace": "dbo"
+                },
+                "config": {
+                    "syncMode": "full_refresh",
+                    "cursorField": [],
+                    "destinationSyncMode": "overwrite",
+                    "primaryKey": [],
+                    "aliasName": "URL_Estoque",
+                    "selected": true,
+                    "fieldSelectionEnabled": false
+                }
+            },
+            {
+                "stream": {
+                    "name": "LixiviacaoCFs_WithStatus",
+                    "jsonSchema": {
+                        "type": "object",
+                        "properties": {
+                            "C": {
+                                "type": "number"
+                            },
+                            "S": {
+                                "type": "number"
+                            },
+                            "CF": {
+                                "type": "string"
+                            },
+                            "PR": {
+                                "type": "number"
+                            },
+                            "BaO": {
+                                "type": "number"
+                            },
+                            "CaO": {
+                                "type": "number"
+                            },
+                            "MgO": {
+                                "type": "number"
+                            },
+                            "PbO": {
+                                "type": "number"
+                            },
+                            "SrO": {
+                                "type": "number"
+                            },
+                            "CeO2": {
+                                "type": "number"
+                            },
+                            "MnO2": {
+                                "type": "number"
+                            },
+                            "Na2O": {
+                                "type": "number"
+                            },
+                            "P2O5": {
+                                "type": "number"
+                            },
+                            "SiO2": {
+                                "type": "number"
+                            },
+                            "ThO2": {
+                                "type": "number"
+                            },
+                            "TiO2": {
+                                "type": "number"
+                            },
+                            "U3O8": {
+                                "type": "number"
+                            },
+                            "Al2O3": {
+                                "type": "number"
+                            },
+                            "Fe2O3": {
+                                "type": "number"
+                            },
+                            "Nb2O5": {
+                                "type": "number"
+                            },
+                            "Ta2O5": {
+                                "type": "number"
+                            },
+                            "Oxidos": {
+                                "type": "number"
+                            },
+                            "Status": {
+                                "type": "string"
+                            },
+                            "MassaCF": {
+                                "type": "number"
+                            },
+                            "DataEnvioSAP": {
+                                "type": "string"
+                            },
+                            "LastModified": {
+                                "type": "string"
+                            },
+                            "SamplePeriod": {
+                                "type": "string"
+                            },
+                            "Producao_Nb2O5": {
+                                "type": "number"
+                            },
+                            "MassaCF_Contabil": {
+                                "type": "number"
+                            },
+                            "QualidadeEstimada": {
+                                "type": "boolean"
+                            }
+                        }
+                    },
+                    "supportedSyncModes": ["full_refresh", "incremental"],
+                    "defaultCursorField": [],
+                    "sourceDefinedPrimaryKey": [],
+                    "namespace": "dbo"
+                },
+                "config": {
+                    "syncMode": "full_refresh",
+                    "cursorField": [],
+                    "destinationSyncMode": "overwrite",
+                    "primaryKey": [],
+                    "aliasName": "LixiviacaoCFs_WithStatus",
+                    "selected": true,
+                    "fieldSelectionEnabled": false
+                }
+            },
+            {
+                "stream": {
+                    "name": "BritagemLigas_KPIs",
+                    "jsonSchema": {
+                        "type": "object",
+                        "properties": {
+                            "C": {
+                                "type": "number"
+                            },
+                            "P": {
+                                "type": "number"
+                            },
+                            "S": {
+                                "type": "number"
+                            },
+                            "Al": {
+                                "type": "number"
+                            },
+                            "DF": {
+                                "type": "number"
+                            },
+                            "Fe": {
+                                "type": "number"
+                            },
+                            "HC": {
+                                "type": "number"
+                            },
+                            "HD": {
+                                "type": "number"
+                            },
+                            "HH": {
+                                "type": "number"
+                            },
+                            "HT": {
+                                "type": "number"
+                            },
+                            "Mn": {
+                                "type": "number"
+                            },
+                            "Nb": {
+                                "type": "number"
+                            },
+                            "Pb": {
+                                "type": "number"
+                            },
+                            "RO": {
+                                "type": "number"
+                            },
+                            "Si": {
+                                "type": "number"
+                            },
+                            "Sn": {
+                                "type": "number"
+                            },
+                            "Ta": {
+                                "type": "number"
+                            },
+                            "Ti": {
+                                "type": "number"
+                            },
+                            "UF": {
+                                "type": "number"
+                            },
+                            "Turma": {
+                                "type": "string"
+                            },
+                            "Nb_Lump": {
+                                "type": "number"
+                            },
+                            "Apuradas": {
+                                "type": "number",
+                                "airbyte_type": "integer"
+                            },
+                            "Massa0_2": {
+                                "type": "number"
+                            },
+                            "Massa1_5": {
+                                "type": "number"
+                            },
+                            "Massa3_15": {
+                                "type": "number"
+                            },
+                            "MassaBotao": {
+                                "type": "number"
+                            },
+                            "MassaTotal": {
+                                "type": "number"
+                            },
+                            "Agrupamento": {
+                                "type": "string"
+                            },
+                            "Producao_Nb": {
+                                "type": "number"
+                            },
+                            "Recuperacao": {
+                                "type": "number"
+                            },
+                            "DataBritagem": {
+                                "type": "string"
+                            },
+                            "LastModified": {
+                                "type": "string"
+                            },
+                            "MassaGrossos": {
+                                "type": "number"
+                            },
+                            "Granulometria": {
+                                "type": "number"
+                            },
+                            "Percentual_Lump": {
+                                "type": "number"
+                            },
+                            "Quantidade_Pedras": {
+                                "type": "number",
+                                "airbyte_type": "integer"
+                            },
+                            "ProducaoFeNbFinoDescontada": {
+                                "type": "number"
+                            },
+                            "ProducaoFeNbGrossoDescontada": {
+                                "type": "number"
+                            }
+                        }
+                    },
+                    "supportedSyncModes": ["full_refresh", "incremental"],
+                    "defaultCursorField": [],
+                    "sourceDefinedPrimaryKey": [],
+                    "namespace": "dbo"
+                },
+                "config": {
+                    "syncMode": "full_refresh",
+                    "cursorField": [],
+                    "destinationSyncMode": "overwrite",
+                    "primaryKey": [],
+                    "aliasName": "BritagemLigas_KPIs",
+                    "selected": true,
+                    "fieldSelectionEnabled": false
+                }
+            },
+            {
+                "stream": {
+                    "name": "URL_Lote",
+                    "jsonSchema": {
+                        "type": "object",
+                        "properties": {
+                            "P": {
+                                "type": "number"
+                            },
+                            "Al": {
+                                "type": "number"
+                            },
+                            "Fe": {
+                                "type": "number"
+                            },
+                            "Mn": {
+                                "type": "number"
+                            },
+                            "Nb": {
+                                "type": "number"
+                            },
+                            "Pb": {
+                                "type": "number"
+                            },
+                            "Si": {
+                                "type": "number"
+                            },
+                            "Sn": {
+                                "type": "number"
+                            },
+                            "Ta": {
+                                "type": "number"
+                            },
+                            "Ti": {
+                                "type": "number"
+                            },
+                            "Massa": {
+                                "type": "number"
+                            },
+                            "Codigo": {
+                                "type": "string"
+                            },
+                            "Amostra": {
+                                "type": "string"
+                            },
+                            "Apurada": {
+                                "type": "boolean"
+                            },
+                            "Z_Metais": {
+                                "type": "number"
+                            },
+                            "ProducaoNb": {
+                                "type": "number"
+                            },
+                            "LastModified": {
+                                "type": "string"
+                            },
+                            "SamplePeriod": {
+                                "type": "string"
+                            },
+                            "Codigo_Solicitacao_MyLIMS": {
+                                "type": "number",
+                                "airbyte_type": "integer"
+                            }
+                        }
+                    },
+                    "supportedSyncModes": ["full_refresh", "incremental"],
+                    "defaultCursorField": [],
+                    "sourceDefinedPrimaryKey": [],
+                    "namespace": "dbo"
+                },
+                "config": {
+                    "syncMode": "full_refresh",
+                    "cursorField": [],
+                    "destinationSyncMode": "overwrite",
+                    "primaryKey": [],
+                    "aliasName": "URL_Lote",
+                    "selected": true,
+                    "fieldSelectionEnabled": false
+                }
+            },
+            {
+                "stream": {
+                    "name": "Lixiviacao_Bags",
+                    "jsonSchema": {
+                        "type": "object",
+                        "properties": {
+                            "C": {
+                                "type": "number"
+                            },
+                            "S": {
+                                "type": "number"
+                            },
+                            "BaO": {
+                                "type": "number"
+                            },
+                            "CaO": {
+                                "type": "number"
+                            },
+                            "MgO": {
+                                "type": "number"
+                            },
+                            "PbO": {
+                                "type": "number"
+                            },
+                            "SrO": {
+                                "type": "number"
+                            },
+                            "MnO2": {
+                                "type": "number"
+                            },
+                            "Na2O": {
+                                "type": "number"
+                            },
+                            "P2O5": {
+                                "type": "number"
+                            },
+                            "Peso": {
+                                "type": "number"
+                            },
+                            "SiO2": {
+                                "type": "number"
+                            },
+                            "ThO2": {
+                                "type": "number"
+                            },
+                            "TiO2": {
+                                "type": "number"
+                            },
+                            "Al2O3": {
+                                "type": "number"
+                            },
+                            "Fe2O3": {
+                                "type": "number"
+                            },
+                            "Nb2O5": {
+                                "type": "number"
+                            },
+                            "Ta2O5": {
+                                "type": "number"
+                            },
+                            "ID_Bag": {
+                                "type": "string"
+                            },
+                            "Origem": {
+                                "type": "string"
+                            },
+                            "Status": {
+                                "type": "string"
+                            },
+                            "Destino": {
+                                "type": "string"
+                            },
+                            "Solidos": {
+                                "type": "number"
+                            },
+                            "Umidade": {
+                                "type": "number"
+                            },
+                            "MassaSeca": {
+                                "type": "number"
+                            },
+                            "MassaNb2O5": {
+                                "type": "number"
+                            },
+                            "Data_Coleta": {
+                                "type": "string"
+                            },
+                            "Finalizacao": {
+                                "type": "string"
+                            },
+                            "LastModified": {
+                                "type": "string"
+                            },
+                            "MassaLiquida": {
+                                "type": "number"
+                            },
+                            "SamplePeriod": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "supportedSyncModes": ["full_refresh", "incremental"],
+                    "defaultCursorField": [],
+                    "sourceDefinedPrimaryKey": [],
+                    "namespace": "dbo"
+                },
+                "config": {
+                    "syncMode": "full_refresh",
+                    "cursorField": [],
+                    "destinationSyncMode": "overwrite",
+                    "primaryKey": [],
+                    "aliasName": "Lixiviacao_Bags",
+                    "selected": true,
+                    "fieldSelectionEnabled": false
+                }
+            },
+            {
+                "stream": {
+                    "name": "BritagemLigas_Finos_Movimentacoes",
+                    "jsonSchema": {
+                        "type": "object",
+                        "properties": {
+                            "C": {
+                                "type": "number"
+                            },
+                            "P": {
+                                "type": "number"
+                            },
+                            "S": {
+                                "type": "number"
+                            },
+                            "Al": {
+                                "type": "number"
+                            },
+                            "Fe": {
+                                "type": "number"
+                            },
+                            "Nb": {
+                                "type": "number"
+                            },
+                            "Pb": {
+                                "type": "number"
+                            },
+                            "Si": {
+                                "type": "number"
+                            },
+                            "Ti": {
+                                "type": "number"
+                            },
+                            "Lote": {
+                                "type": "string"
+                            },
+                            "Tipo": {
+                                "type": "string"
+                            },
+                            "Massa": {
+                                "type": "number"
+                            },
+                            "MassaNb": {
+                                "type": "number"
+                            },
+                            "Estoque_C": {
+                                "type": "number"
+                            },
+                            "Estoque_P": {
+                                "type": "number"
+                            },
+                            "Estoque_S": {
+                                "type": "number"
+                            },
+                            "Estoque_Al": {
+                                "type": "number"
+                            },
+                            "Estoque_Fe": {
+                                "type": "number"
+                            },
+                            "Estoque_Nb": {
+                                "type": "number"
+                            },
+                            "Estoque_Pb": {
+                                "type": "number"
+                            },
+                            "Estoque_Si": {
+                                "type": "number"
+                            },
+                            "Estoque_Ti": {
+                                "type": "number"
+                            },
+                            "LastModified": {
+                                "type": "string"
+                            },
+                            "SamplePeriod": {
+                                "type": "string"
+                            },
+                            "Estoque_Massa": {
+                                "type": "number"
+                            },
+                            "Estoque_MassaNb": {
+                                "type": "number"
+                            }
+                        }
+                    },
+                    "supportedSyncModes": ["full_refresh", "incremental"],
+                    "defaultCursorField": [],
+                    "sourceDefinedPrimaryKey": [],
+                    "namespace": "dbo"
+                },
+                "config": {
+                    "syncMode": "full_refresh",
+                    "cursorField": [],
+                    "destinationSyncMode": "overwrite",
+                    "primaryKey": [],
+                    "aliasName": "BritagemLigas_Finos_Movimentacoes",
+                    "selected": true,
+                    "fieldSelectionEnabled": false
+                }
+            },
+            {
+                "stream": {
+                    "name": "BritagemLigas_Pedras",
+                    "jsonSchema": {
+                        "type": "object",
+                        "properties": {
+                            "C": {
+                                "type": "number"
+                            },
+                            "P": {
+                                "type": "number"
+                            },
+                            "S": {
+                                "type": "number"
+                            },
+                            "Al": {
+                                "type": "number"
+                            },
+                            "Fe": {
+                                "type": "number"
+                            },
+                            "Mn": {
+                                "type": "number"
+                            },
+                            "Nb": {
+                                "type": "number"
+                            },
+                            "Pb": {
+                                "type": "number"
+                            },
+                            "Si": {
+                                "type": "number"
+                            },
+                            "Sn": {
+                                "type": "number"
+                            },
+                            "Ta": {
+                                "type": "number"
+                            },
+                            "Ti": {
+                                "type": "number"
+                            },
+                            "Pedra": {
+                                "type": "string"
+                            },
+                            "NbLump": {
+                                "type": "number"
+                            },
+                            "Apurada": {
+                                "type": "boolean"
+                            },
+                            "MassaNb": {
+                                "type": "number"
+                            },
+                            "Massa0_2": {
+                                "type": "number"
+                            },
+                            "Massa1_5": {
+                                "type": "number"
+                            },
+                            "PercLump": {
+                                "type": "number"
+                            },
+                            "Massa3_15": {
+                                "type": "number"
+                            },
+                            "MassaBotao": {
+                                "type": "number"
+                            },
+                            "MassaTotal": {
+                                "type": "number"
+                            },
+                            "Recuperacao": {
+                                "type": "number"
+                            },
+                            "DataBritagem": {
+                                "type": "string"
+                            },
+                            "LastModified": {
+                                "type": "string"
+                            },
+                            "MassaGrossos": {
+                                "type": "number"
+                            },
+                            "Granulometria": {
+                                "type": "number"
+                            },
+                            "ResfriamentoForcado": {
+                                "type": "string"
+                            },
+                            "MassaBotao_Metalurgia": {
+                                "type": "number"
+                            }
+                        }
+                    },
+                    "supportedSyncModes": ["full_refresh", "incremental"],
+                    "defaultCursorField": [],
+                    "sourceDefinedPrimaryKey": [],
+                    "namespace": "dbo"
+                },
+                "config": {
+                    "syncMode": "full_refresh",
+                    "cursorField": [],
+                    "destinationSyncMode": "overwrite",
+                    "primaryKey": [],
+                    "aliasName": "BritagemLigas_Pedras",
+                    "selected": true,
+                    "fieldSelectionEnabled": false
+                }
+            },
+            {
+                "stream": {
+                    "name": "Britagem_BVO_KPIs",
+                    "jsonSchema": {
+                        "type": "object",
+                        "properties": {
+                            "DF": {
+                                "type": "number"
+                            },
+                            "HD": {
+                                "type": "number"
+                            },
+                            "HH": {
+                                "type": "number"
+                            },
+                            "HT": {
+                                "type": "number"
+                            },
+                            "UF": {
+                                "type": "number"
+                            },
+                            "OEE": {
+                                "type": "number"
+                            },
+                            "Turma": {
+                                "type": "string"
+                            },
+                            "Producao": {
+                                "type": "number"
+                            },
+                            "RejeitoTBS": {
+                                "type": "number"
+                            },
+                            "Throughput": {
+                                "type": "number"
+                            },
+                            "Agrupamento": {
+                                "type": "string"
+                            },
+                            "DataEnvioSAP": {
+                                "type": "string"
+                            },
+                            "LastModified": {
+                                "type": "string"
+                            },
+                            "SamplePeriod": {
+                                "type": "string"
+                            },
+                            "Produtividade": {
+                                "type": "number"
+                            },
+                            "TeorS_Produto": {
+                                "type": "number"
+                            },
+                            "TeorS_Rejeito": {
+                                "type": "number"
+                            },
+                            "Enriquecimento": {
+                                "type": "number"
+                            },
+                            "TeorBaO_Produto": {
+                                "type": "number"
+                            },
+                            "TeorBaO_Rejeito": {
+                                "type": "number"
+                            },
+                            "TeorCaO_Produto": {
+                                "type": "number"
+                            },
+                            "TeorCaO_Rejeito": {
+                                "type": "number"
+                            },
+                            "TeorSiO2_Produto": {
+                                "type": "number"
+                            },
+                            "TeorSiO2_Rejeito": {
+                                "type": "number"
+                            },
+                            "TeorNb2O5_Produto": {
+                                "type": "number"
+                            },
+                            "TeorNb2O5_Rejeito": {
+                                "type": "number"
+                            },
+                            "RecuperacaoMassica": {
+                                "type": "number"
+                            },
+                            "Eficiencia_Produtiva": {
+                                "type": "number"
+                            },
+                            "RecuperacaoMetalurgica": {
+                                "type": "number"
+                            },
+                            "Rendimento_Operacional": {
+                                "type": "number"
+                            }
+                        }
+                    },
+                    "supportedSyncModes": ["full_refresh", "incremental"],
+                    "defaultCursorField": [],
+                    "sourceDefinedPrimaryKey": [],
+                    "namespace": "dbo"
+                },
+                "config": {
+                    "syncMode": "full_refresh",
+                    "cursorField": [],
+                    "destinationSyncMode": "overwrite",
+                    "primaryKey": [],
+                    "aliasName": "Britagem_BVO_KPIs",
+                    "selected": true,
+                    "fieldSelectionEnabled": false
+                }
+            },
+            {
+                "stream": {
+                    "name": "BV_KPIs",
+                    "jsonSchema": {
+                        "type": "object",
+                        "properties": {
+                            "DF": {
+                                "type": "number"
+                            },
+                            "HC": {
+                                "type": "number"
+                            },
+                            "HD": {
+                                "type": "number"
+                            },
+                            "HH": {
+                                "type": "number"
+                            },
+                            "HI": {
+                                "type": "number"
+                            },
+                            "HT": {
+                                "type": "number"
+                            },
+                            "UF": {
+                                "type": "number"
+                            },
+                            "OEE": {
+                                "type": "number"
+                            },
+                            "Lote": {
+                                "type": "string"
+                            },
+                            "N200": {
+                                "type": "number"
+                            },
+                            "Grade": {
+                                "type": "number"
+                            },
+                            "TeorS": {
+                                "type": "number"
+                            },
+                            "Turma": {
+                                "type": "string"
+                            },
+                            "MassaS": {
+                                "type": "number"
+                            },
+                            "TeorBaO": {
+                                "type": "number"
+                            },
+                            "TeorCaO": {
+                                "type": "number"
+                            },
+                            "TeorPbO": {
+                                "type": "number"
+                            },
+                            "Lamas_DM": {
+                                "type": "number"
+                            },
+                            "MassaPbO": {
+                                "type": "number"
+                            },
+                            "ProdConc": {
+                                "type": "number"
+                            },
+                            "Producao": {
+                                "type": "number"
+                            },
+                            "TeorP2O5": {
+                                "type": "number"
+                            },
+                            "TeorSiO2": {
+                                "type": "number"
+                            },
+                            "TeorTiO2": {
+                                "type": "number"
+                            },
+                            "ColetorNb": {
+                                "type": "number"
+                            },
+                            "MassaP2O5": {
+                                "type": "number"
+                            },
+                            "MassaSiO2": {
+                                "type": "number"
+                            },
+                            "MassaTiO2": {
+                                "type": "number"
+                            },
+                            "TeorNb2O5": {
+                                "type": "number"
+                            },
+                            "Lamas_Teor": {
+                                "type": "number"
+                            },
+                            "TeorAlim_S": {
+                                "type": "number"
+                            },
+                            "Agrupamento": {
+                                "type": "string"
+                            },
+                            "ConcFTSU_DM": {
+                                "type": "number"
+                            },
+                            "DepressorNb": {
+                                "type": "number"
+                            },
+                            "ProdNominal": {
+                                "type": "number"
+                            },
+                            "Recuperacao": {
+                                "type": "number"
+                            },
+                            "ConcFinal_DM": {
+                                "type": "number"
+                            },
+                            "DataEnvioSAP": {
+                                "type": "string"
+                            },
+                            "HT_CalcDF_UF": {
+                                "type": "number"
+                            },
+                            "LastModified": {
+                                "type": "string"
+                            },
+                            "Magnetico_DM": {
+                                "type": "number"
+                            },
+                            "MassaAlimFTC": {
+                                "type": "number"
+                            },
+                            "MassaAlimFTN": {
+                                "type": "number"
+                            },
+                            "MassaAlimFTS": {
+                                "type": "number"
+                            },
+                            "SamplePeriod": {
+                                "type": "string"
+                            },
+                            "TeorAlim_BaO": {
+                                "type": "number"
+                            },
+                            "TeorAlim_CaO": {
+                                "type": "number"
+                            },
+                            "TeorAlim_MgO": {
+                                "type": "number"
+                            },
+                            "TeorOreGrade": {
+                                "type": "number"
+                            },
+                            "ColetorSilico": {
+                                "type": "number"
+                            },
+                            "ConcFTSU_Teor": {
+                                "type": "number"
+                            },
+                            "ConcSilica_DM": {
+                                "type": "number"
+                            },
+                            "MassaAlimFTSU": {
+                                "type": "number"
+                            },
+                            "Produtividade": {
+                                "type": "number"
+                            },
+                            "RejeitoFTN_DM": {
+                                "type": "number"
+                            },
+                            "TeorAlim_P2O5": {
+                                "type": "number"
+                            },
+                            "TeorAlim_SiO2": {
+                                "type": "number"
+                            },
+                            "TeorAlim_TiO2": {
+                                "type": "number"
+                            },
+                            "Throughput_th": {
+                                "type": "number"
+                            },
+                            "ColetorSulfato": {
+                                "type": "number"
+                            },
+                            "ConcFinal_Teor": {
+                                "type": "number"
+                            },
+                            "Magnetico_Teor": {
+                                "type": "number"
+                            },
+                            "TeorAlim_Al2O3": {
+                                "type": "number"
+                            },
+                            "TeorAlim_Fe2O3": {
+                                "type": "number"
+                            },
+                            "ConcSilica_Teor": {
+                                "type": "number"
+                            },
+                            "DepressorSilico": {
+                                "type": "number"
+                            },
+                            "RejeitoFTN_Teor": {
+                                "type": "number"
+                            },
+                            "AlimentacaoNb2O5": {
+                                "type": "number"
+                            },
+                            "ColetorCarbonato": {
+                                "type": "number"
+                            },
+                            "ConcCarbonato_DM": {
+                                "type": "number"
+                            },
+                            "DepressorSulfato": {
+                                "type": "number"
+                            },
+                            "MassaSiO2_OffSpec": {
+                                "type": "number"
+                            },
+                            "AlimentacaoBsTotal": {
+                                "type": "number"
+                            },
+                            "ConcCarbonato_Teor": {
+                                "type": "number"
+                            },
+                            "ProducaoBritagemBS": {
+                                "type": "number"
+                            },
+                            "Producao_Planejada": {
+                                "type": "number"
+                            },
+                            "Eficiencia_Producao": {
+                                "type": "number"
+                            },
+                            "MassaTotalPatioBVFR": {
+                                "type": "number"
+                            },
+                            "AlimentacaoBs_Perdas": {
+                                "type": "number"
+                            },
+                            "ThroughputWithQuality": {
+                                "type": "number"
+                            },
+                            "MassaTotalPilhaHomBVFR": {
+                                "type": "number"
+                            },
+                            "Percentual_SiO2OffSpec": {
+                                "type": "number"
+                            },
+                            "Rendimento_Operacional": {
+                                "type": "number"
+                            },
+                            "MassaTotalRejeitoBarragem": {
+                                "type": "number"
+                            }
+                        }
+                    },
+                    "supportedSyncModes": ["full_refresh", "incremental"],
+                    "defaultCursorField": [],
+                    "sourceDefinedPrimaryKey": [],
+                    "namespace": "dbo"
+                },
+                "config": {
+                    "syncMode": "full_refresh",
+                    "cursorField": [],
+                    "destinationSyncMode": "overwrite",
+                    "primaryKey": [],
+                    "aliasName": "BV_KPIs",
+                    "selected": true,
+                    "fieldSelectionEnabled": false
+                }
+            },
+            {
+                "stream": {
+                    "name": "Metalurgia_NL_Kpis",
+                    "jsonSchema": {
+                        "type": "object",
+                        "properties": {
+                            "C": {
+                                "type": "number"
+                            },
+                            "P": {
+                                "type": "number"
+                            },
+                            "S": {
+                                "type": "number"
+                            },
+                            "Al": {
+                                "type": "number"
+                            },
+                            "Fe": {
+                                "type": "number"
+                            },
+                            "Mn": {
+                                "type": "number"
+                            },
+                            "NL": {
+                                "type": "string"
+                            },
+                            "Nb": {
+                                "type": "number"
+                            },
+                            "Pb": {
+                                "type": "number"
+                            },
+                            "Si": {
+                                "type": "number"
+                            },
+                            "Sn": {
+                                "type": "number"
+                            },
+                            "Ta": {
+                                "type": "number"
+                            },
+                            "Ti": {
+                                "type": "number"
+                            },
+                            "Amostra": {
+                                "type": "string"
+                            },
+                            "LastModified": {
+                                "type": "string"
+                            },
+                            "SamplePeriod": {
+                                "type": "string"
+                            }
+                        }
+                    },
+                    "supportedSyncModes": ["full_refresh", "incremental"],
+                    "defaultCursorField": [],
+                    "sourceDefinedPrimaryKey": [["NL"]],
+                    "namespace": "dbo"
+                },
+                "config": {
+                    "syncMode": "full_refresh",
+                    "cursorField": [],
+                    "destinationSyncMode": "overwrite",
+                    "primaryKey": [["NL"]],
+                    "aliasName": "Metalurgia_NL_Kpis",
+                    "selected": true,
+                    "fieldSelectionEnabled": false
+                }
+            },
+            {
+                "stream": {
+                    "name": "Tailings_KPIs",
+                    "jsonSchema": {
+                        "type": "object",
+                        "properties": {
+                            "DF": {
+                                "type": "number"
+                            },
+                            "HC": {
+                                "type": "number"
+                            },
+                            "HD": {
+                                "type": "number"
+                            },
+                            "HH": {
+                                "type": "number"
+                            },
+                            "HT": {
+                                "type": "number"
+                            },
+                            "RO": {
+                                "type": "number"
+                            },
+                            "UF": {
+                                "type": "number"
+                            },
+                            "OEE": {
+                                "type": "number"
+                            },
+                            "N200": {
+                                "type": "number"
+                            },
+                            "Turma": {
+                                "type": "string"
+                            },
+                            "TeorBaO": {
+                                "type": "number"
+                            },
+                            "ProdConc": {
+                                "type": "number"
+                            },
+                            "TeorP2O5": {
+                                "type": "number"
+                            },
+                            "TeorSiO2": {
+                                "type": "number"
+                            },
+                            "TeorTiO2": {
+                                "type": "number"
+                            },
+                            "MassaP2O5": {
+                                "type": "number"
+                            },
+                            "MassaSiO2": {
+                                "type": "number"
+                            },
+                            "MassaTiO2": {
+                                "type": "number"
+                            },
+                            "TeorNb2O5": {
+                                "type": "number"
+                            },
+                            "Throughput": {
+                                "type": "number"
+                            },
+                            "Agrupamento": {
+                                "type": "string"
+                            },
+                            "Recuperacao": {
+                                "type": "number"
+                            },
+                            "DataEnvioSAP": {
+                                "type": "string"
+                            },
+                            "LastModified": {
+                                "type": "string"
+                            },
+                            "SamplePeriod": {
+                                "type": "string"
+                            },
+                            "TeorAlim_CaO": {
+                                "type": "number"
+                            },
+                            "TeorOreGrade": {
+                                "type": "number"
+                            },
+                            "ProducaoNb2O5": {
+                                "type": "number"
+                            },
+                            "Produtividade": {
+                                "type": "number"
+                            },
+                            "TeorAlim_SiO2": {
+                                "type": "number"
+                            },
+                            "SOP_ProducaoNb2O5": {
+                                "type": "number"
+                            },
+                            "AlimentacaoBsTotal": {
+                                "type": "number"
+                            },
+                            "Eficiencia_Producao": {
+                                "type": "number"
+                            }
+                        }
+                    },
+                    "supportedSyncModes": ["full_refresh", "incremental"],
+                    "defaultCursorField": [],
+                    "sourceDefinedPrimaryKey": [],
+                    "namespace": "dbo"
+                },
+                "config": {
+                    "syncMode": "full_refresh",
+                    "cursorField": [],
+                    "destinationSyncMode": "overwrite",
+                    "primaryKey": [],
+                    "aliasName": "Tailings_KPIs",
+                    "selected": true,
+                    "fieldSelectionEnabled": false
+                }
+            },
+            {
+                "stream": {
+                    "name": "URL_KPIs",
+                    "jsonSchema": {
+                        "type": "object",
+                        "properties": {
+                            "DF": {
+                                "type": "number"
+                            },
+                            "HC": {
+                                "type": "number"
+                            },
+                            "HD": {
+                                "type": "number"
+                            },
+                            "HH": {
+                                "type": "number"
+                            },
+                            "HI": {
+                                "type": "number"
+                            },
+                            "HT": {
+                                "type": "number"
+                            },
+                            "RO": {
+                                "type": "number"
+                            },
+                            "UF": {
+                                "type": "number"
+                            },
+                            "Turma": {
+                                "type": "string"
+                            },
+                            "Nb_Mesa": {
+                                "type": "number"
+                            },
+                            "Nb_Jigue": {
+                                "type": "number"
+                            },
+                            "Massa_Mesa": {
+                                "type": "number"
+                            },
+                            "Nb_Espiral": {
+                                "type": "number"
+                            },
+                            "Agrupamento": {
+                                "type": "string"
+                            },
+                            "Massa_Jigue": {
+                                "type": "number"
+                            },
+                            "ProducaoURL": {
+                                "type": "number"
+                            },
+                            "Recuperacao": {
+                                "type": "number"
+                            },
+                            "DataEnvioSAP": {
+                                "type": "string"
+                            },
+                            "LastModified": {
+                                "type": "string"
+                            },
+                            "RejeitoGeral": {
+                                "type": "number"
+                            },
+                            "SamplePeriod": {
+                                "type": "string"
+                            },
+                            "ThroughputBS": {
+                                "type": "number"
+                            },
+                            "Massa_Espiral": {
+                                "type": "number"
+                            },
+                            "TeorNbProduto": {
+                                "type": "number"
+                            },
+                            "Nb_Alimentacao": {
+                                "type": "number"
+                            },
+                            "ProducaoNb_Mesa": {
+                                "type": "number"
+                            },
+                            "ProducaoNb_Jigue": {
+                                "type": "number"
+                            },
+                            "AlimentacaoBSTotal": {
+                                "type": "number"
+                            },
+                            "ProducaoNb_Espiral": {
+                                "type": "number"
+                            }
+                        }
+                    },
+                    "supportedSyncModes": ["full_refresh", "incremental"],
+                    "defaultCursorField": [],
+                    "sourceDefinedPrimaryKey": [],
+                    "namespace": "dbo"
+                },
+                "config": {
+                    "syncMode": "full_refresh",
+                    "cursorField": [],
+                    "destinationSyncMode": "overwrite",
+                    "primaryKey": [],
+                    "aliasName": "URL_KPIs",
+                    "selected": true,
+                    "fieldSelectionEnabled": false
+                }
+            }
+        ]
+    }
+}

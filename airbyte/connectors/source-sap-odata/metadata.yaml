@@ -1,0 +1,19 @@
+data:
+  allowedHosts:
+    hosts:
+      - "*" # Please change to the hostname of the source.
+  registries:
+    oss:
+      enabled: false
+  connectorSubtype: api
+  connectorType: source
+  definitionId: d61812b4-be43-47d6-81f6-2be7eb3aa720
+  dockerImageTag: 0.1.0
+  dockerRepository: airbyte/source-sap-odata
+  githubIssueLabel: source-sap-odata
+  icon: sap-odata.svg
+  license: MIT
+  name: Sap Odata 
+  releaseStage: alpha
+  supportUrl: https://docs.airbyte.com/integrations/sources/sap-odata
+metadataSpecVersion: "1.0"

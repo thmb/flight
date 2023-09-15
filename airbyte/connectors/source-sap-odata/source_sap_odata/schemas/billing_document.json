@@ -1,0 +1,458 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "__count": {
+            "type": ["null", "string"]
+        },
+        "results": {
+            "type": ["null", "array"],
+            "items": {
+                "type": ["null", "object"],
+                "properties": {
+                    "BillingDocument": {
+                        "type": ["null", "string"]
+                    },
+                    "BillingDocumentItem": {
+                        "type": ["null", "string"]
+                    },
+                    "SalesDocumentItemCategory": {
+                        "type": ["null", "string"]
+                    },
+                    "SalesDocumentItemType": {
+                        "type": ["null", "string"]
+                    },
+                    "ReturnItemProcessingType": {
+                        "type": ["null", "string"]
+                    },
+                    "CreatedByUser": {
+                        "type": ["null", "string"]
+                    },
+                    "CreationDate": {
+                        "type": ["null", "string"]
+                    },
+                    "CreationTime": {
+                        "type": ["null", "string"]
+                    },
+                    "ReferenceLogicalSystem": {
+                        "type": ["null", "string"]
+                    },
+                    "OrganizationDivision": {
+                        "type": ["null", "string"]
+                    },
+                    "Division": {
+                        "type": ["null", "string"]
+                    },
+                    "SalesOffice": {
+                        "type": ["null", "string"]
+                    },
+                    "Material": {
+                        "type": ["null", "string"]
+                    },
+                    "Material_Text": {
+                        "type": ["null", "string"]
+                    },
+                    "OriginallyRequestedMaterial": {
+                        "type": ["null", "string"]
+                    },
+                    "OriginallyRequestedMaterial_Text": {
+                        "type": ["null", "string"]
+                    },
+                    "InternationalArticleNumber": {
+                        "type": ["null", "string"]
+                    },
+                    "PricingReferenceMaterial": {
+                        "type": ["null", "string"]
+                    },
+                    "PricingReferenceMaterial_Text": {
+                        "type": ["null", "string"]
+                    },
+                    "Batch": {
+                        "type": ["null", "string"]
+                    },
+                    "ProductHierarchyNode": {
+                        "type": ["null", "string"]
+                    },
+                    "MaterialGroup": {
+                        "type": ["null", "string"]
+                    },
+                    "MaterialGroup_Text": {
+                        "type": ["null", "string"]
+                    },
+                    "AdditionalMaterialGroup1": {
+                        "type": ["null", "string"]
+                    },
+                    "AdditionalMaterialGroup2": {
+                        "type": ["null", "string"]
+                    },
+                    "AdditionalMaterialGroup3": {
+                        "type": ["null", "string"]
+                    },
+                    "AdditionalMaterialGroup4": {
+                        "type": ["null", "string"]
+                    },
+                    "AdditionalMaterialGroup5": {
+                        "type": ["null", "string"]
+                    },
+                    "ProductConfiguration": {
+                        "type": ["null", "string"]
+                    },
+                    "MaterialCommissionGroup": {
+                        "type": ["null", "string"]
+                    },
+                    "Plant": {
+                        "type": ["null", "string"]
+                    },
+                    "StorageLocation": {
+                        "type": ["null", "string"]
+                    },
+                    "ReplacementPartType": {
+                        "type": ["null", "string"]
+                    },
+                    "MaterialGroupHierarchy1": {
+                        "type": ["null", "string"]
+                    },
+                    "MaterialGroupHierarchy2": {
+                        "type": ["null", "string"]
+                    },
+                    "PlantRegion": {
+                        "type": ["null", "string"]
+                    },
+                    "PlantCounty": {
+                        "type": ["null", "string"]
+                    },
+                    "PlantCity": {
+                        "type": ["null", "string"]
+                    },
+                    "BOMExplosion": {
+                        "type": ["null", "string"]
+                    },
+                    "MaterialDeterminationType": {
+                        "type": ["null", "string"]
+                    },
+                    "BillingDocumentItemText": {
+                        "type": ["null", "string"]
+                    },
+                    "ServicesRenderedDate": {
+                        "type": ["null", "string"]
+                    },
+                    "BillingQuantity": {
+                        "type": ["null", "string"]
+                    },
+                    "BillingQuantityUnit": {
+                        "type": ["null", "string"]
+                    },
+                    "BillingQuantityInBaseUnit": {
+                        "type": ["null", "string"]
+                    },
+                    "BaseUnit": {
+                        "type": ["null", "string"]
+                    },
+                    "MRPRequiredQuantityInBaseUnit": {
+                        "type": ["null", "string"]
+                    },
+                    "BillingToBaseQuantityDnmntr": {
+                        "type": ["null", "string"]
+                    },
+                    "BillingToBaseQuantityNmrtr": {
+                        "type": ["null", "string"]
+                    },
+                    "ItemGrossWeight": {
+                        "type": ["null", "string"]
+                    },
+                    "ItemNetWeight": {
+                        "type": ["null", "string"]
+                    },
+                    "ItemWeightUnit": {
+                        "type": ["null", "string"]
+                    },
+                    "ItemVolume": {
+                        "type": ["null", "string"]
+                    },
+                    "ItemVolumeUnit": {
+                        "type": ["null", "string"]
+                    },
+                    "BillToPartyCountry": {
+                        "type": ["null", "string"]
+                    },
+                    "BillToPartyRegion": {
+                        "type": ["null", "string"]
+                    },
+                    "BillingPlanRule": {
+                        "type": ["null", "string"]
+                    },
+                    "BillingPlan": {
+                        "type": ["null", "string"]
+                    },
+                    "BillingPlanItem": {
+                        "type": ["null", "string"]
+                    },
+                    "DocumentBillingStatus": {
+                        "type": ["null", "string"]
+                    },
+                    "NetAmount": {
+                        "type": ["null", "string"]
+                    },
+                    "TransactionCurrency": {
+                        "type": ["null", "string"]
+                    },
+                    "GrossAmount": {
+                        "type": ["null", "string"]
+                    },
+                    "PricingDate": {
+                        "type": ["null", "string"]
+                    },
+                    "PriceDetnExchangeRate": {
+                        "type": ["null", "string"]
+                    },
+                    "PricingScaleQuantityInBaseUnit": {
+                        "type": ["null", "string"]
+                    },
+                    "TaxAmount": {
+                        "type": ["null", "string"]
+                    },
+                    "CostAmount": {
+                        "type": ["null", "string"]
+                    },
+                    "Subtotal1Amount": {
+                        "type": ["null", "string"]
+                    },
+                    "Subtotal2Amount": {
+                        "type": ["null", "string"]
+                    },
+                    "Subtotal3Amount": {
+                        "type": ["null", "string"]
+                    },
+                    "Subtotal4Amount": {
+                        "type": ["null", "string"]
+                    },
+                    "Subtotal5Amount": {
+                        "type": ["null", "string"]
+                    },
+                    "Subtotal6Amount": {
+                        "type": ["null", "string"]
+                    },
+                    "StatisticalValueControl": {
+                        "type": ["null", "string"]
+                    },
+                    "CashDiscountIsDeductible": {
+                        "type": ["null", "boolean"]
+                    },
+                    "CustomerConditionGroup1": {
+                        "type": ["null", "string"]
+                    },
+                    "CustomerConditionGroup2": {
+                        "type": ["null", "string"]
+                    },
+                    "CustomerConditionGroup3": {
+                        "type": ["null", "string"]
+                    },
+                    "CustomerConditionGroup4": {
+                        "type": ["null", "string"]
+                    },
+                    "CustomerConditionGroup5": {
+                        "type": ["null", "string"]
+                    },
+                    "ManualPriceChangeType": {
+                        "type": ["null", "string"]
+                    },
+                    "MaterialPricingGroup": {
+                        "type": ["null", "string"]
+                    },
+                    "StatisticsExchangeRate": {
+                        "type": ["null", "string"]
+                    },
+                    "MainItemPricingRefMaterial": {
+                        "type": ["null", "string"]
+                    },
+                    "MainItemPricingRefMaterial_Text": {
+                        "type": ["null", "string"]
+                    },
+                    "MainItemMaterialPricingGroup": {
+                        "type": ["null", "string"]
+                    },
+                    "DepartureCountry": {
+                        "type": ["null", "string"]
+                    },
+                    "TaxJurisdiction": {
+                        "type": ["null", "string"]
+                    },
+                    "ProductTaxClassification1": {
+                        "type": ["null", "string"]
+                    },
+                    "ProductTaxClassification2": {
+                        "type": ["null", "string"]
+                    },
+                    "ProductTaxClassification3": {
+                        "type": ["null", "string"]
+                    },
+                    "ProductTaxClassification4": {
+                        "type": ["null", "string"]
+                    },
+                    "ProductTaxClassification5": {
+                        "type": ["null", "string"]
+                    },
+                    "ProductTaxClassification6": {
+                        "type": ["null", "string"]
+                    },
+                    "ProductTaxClassification7": {
+                        "type": ["null", "string"]
+                    },
+                    "ProductTaxClassification8": {
+                        "type": ["null", "string"]
+                    },
+                    "ProductTaxClassification9": {
+                        "type": ["null", "string"]
+                    },
+                    "ZeroVATRsn": {
+                        "type": ["null", "string"]
+                    },
+                    "EligibleAmountForCashDiscount": {
+                        "type": ["null", "string"]
+                    },
+                    "BusinessArea": {
+                        "type": ["null", "string"]
+                    },
+                    "BusinessArea_Text": {
+                        "type": ["null", "string"]
+                    },
+                    "ProfitCenter": {
+                        "type": ["null", "string"]
+                    },
+                    "WBSElement": {
+                        "type": ["null", "string"]
+                    },
+                    "WBSElement_Text": {
+                        "type": ["null", "string"]
+                    },
+                    "ControllingArea": {
+                        "type": ["null", "string"]
+                    },
+                    "ProfitabilitySegment": {
+                        "type": ["null", "string"]
+                    },
+                    "OrderID": {
+                        "type": ["null", "string"]
+                    },
+                    "CostCenter": {
+                        "type": ["null", "string"]
+                    },
+                    "OriginSDDocument": {
+                        "type": ["null", "string"]
+                    },
+                    "OriginSDDocumentItem": {
+                        "type": ["null", "string"]
+                    },
+                    "PriceDetnExchangeRateDate": {
+                        "type": ["null", "string"]
+                    },
+                    "MatlAccountAssignmentGroup": {
+                        "type": ["null", "string"]
+                    },
+                    "ReferenceSDDocument": {
+                        "type": ["null", "string"]
+                    },
+                    "ReferenceSDDocumentItem": {
+                        "type": ["null", "string"]
+                    },
+                    "ReferenceSDDocumentCategory": {
+                        "type": ["null", "string"]
+                    },
+                    "SalesDocument": {
+                        "type": ["null", "string"]
+                    },
+                    "SalesDocumentItem": {
+                        "type": ["null", "string"]
+                    },
+                    "SalesSDDocumentCategory": {
+                        "type": ["null", "string"]
+                    },
+                    "HigherLevelItem": {
+                        "type": ["null", "string"]
+                    },
+                    "BillingDocumentItemInPartSgmt": {
+                        "type": ["null", "string"]
+                    },
+                    "ExternalReferenceDocument": {
+                        "type": ["null", "string"]
+                    },
+                    "ExternalReferenceDocumentItem": {
+                        "type": ["null", "string"]
+                    },
+                    "SalesGroup": {
+                        "type": ["null", "string"]
+                    },
+                    "AdditionalCustomerGroup1": {
+                        "type": ["null", "string"]
+                    },
+                    "AdditionalCustomerGroup2": {
+                        "type": ["null", "string"]
+                    },
+                    "AdditionalCustomerGroup3": {
+                        "type": ["null", "string"]
+                    },
+                    "AdditionalCustomerGroup4": {
+                        "type": ["null", "string"]
+                    },
+                    "AdditionalCustomerGroup5": {
+                        "type": ["null", "string"]
+                    },
+                    "SDDocumentReason": {
+                        "type": ["null", "string"]
+                    },
+                    "RetailPromotion": {
+                        "type": ["null", "string"]
+                    },
+                    "RebateBasisAmount": {
+                        "type": ["null", "string"]
+                    },
+                    "VolumeRebateGroup": {
+                        "type": ["null", "string"]
+                    },
+                    "ItemIsRelevantForCredit": {
+                        "type": ["null", "boolean"]
+                    },
+                    "CreditRelatedPrice": {
+                        "type": ["null", "string"]
+                    },
+                    "SalesDeal": {
+                        "type": ["null", "string"]
+                    },
+                    "SalesPromotion": {
+                        "type": ["null", "string"]
+                    },
+                    "SalesOrderSalesDistrict": {
+                        "type": ["null", "string"]
+                    },
+                    "SalesOrderCustomerGroup": {
+                        "type": ["null", "string"]
+                    },
+                    "SalesOrderCustomerPriceGroup": {
+                        "type": ["null", "string"]
+                    },
+                    "SalesOrderPriceListType": {
+                        "type": ["null", "string"]
+                    },
+                    "SalesOrderSalesOrganization": {
+                        "type": ["null", "string"]
+                    },
+                    "SalesOrderDistributionChannel": {
+                        "type": ["null", "string"]
+                    },
+                    "SalesDocIsCreatedFromReference": {
+                        "type": ["null", "boolean"]
+                    },
+                    "ShippingPoint": {
+                        "type": ["null", "string"]
+                    },
+                    "ShippingPoint_Text": {
+                        "type": ["null", "string"]
+                    },
+                    "HigherLevelItemUsage": {
+                        "type": ["null", "string"]
+                    }
+                }
+            }
+        }
+    }
+}

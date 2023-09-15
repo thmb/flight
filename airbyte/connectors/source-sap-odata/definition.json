@@ -1,0 +1,8 @@
+{
+    "sourceDefinition": {
+        "name": "SAP OData Service",
+        "documentationUrl": "",
+        "dockerRepository": "thautech/source-sap-odata",
+        "dockerImageTag": "0.2.5"
+    }
+}

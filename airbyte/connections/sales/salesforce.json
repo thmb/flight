@@ -1,0 +1,573 @@
+{
+    "name": "Sales - Salesforce",
+    "namespaceDefinition": "destination",
+    "namespaceFormat": "${SOURCE_NAMESPACE}",
+    "prefix": "salesforce_",
+    "status": "active",
+    "scheduleType": "manual",
+    "geography": "auto",
+    "breakingChange": false,
+    "notifySchemaChanges": false,
+    "notifySchemaChangesByEmail": false,
+    "nonBreakingChangesPreference": "ignore",
+    "operationIds": [],
+    "syncCatalog": {
+        "streams": [
+            {
+                "stream": {
+                    "name": "Opportunity",
+                    "jsonSchema": {
+                        "type": "object",
+                        "$schema": "http://json-schema.org/draft-07/schema#",
+                        "properties": {
+                            "Id": {
+                                "type": ["string", "null"]
+                            },
+                            "Name": {
+                                "type": ["string", "null"]
+                            },
+                            "Type": {
+                                "type": ["string", "null"]
+                            },
+                            "IsWon": {
+                                "type": ["boolean", "null"]
+                            },
+                            "Amount": {
+                                "type": ["number", "null"]
+                            },
+                            "Fiscal": {
+                                "type": ["string", "null"]
+                            },
+                            "ICMS__c": {
+                                "type": ["number", "null"]
+                            },
+                            "OwnerId": {
+                                "type": ["string", "null"]
+                            },
+                            "Site__c": {
+                                "type": ["string", "null"]
+                            },
+                            "Canal__c": {
+                                "type": ["string", "null"]
+                            },
+                            "IsClosed": {
+                                "type": ["boolean", "null"]
+                            },
+                            "Linha__c": {
+                                "type": ["string", "null"]
+                            },
+                            "Moeda__c": {
+                                "type": ["string", "null"]
+                            },
+                            "NextStep": {
+                                "type": ["string", "null"]
+                            },
+                            "AccountId": {
+                                "type": ["string", "null"]
+                            },
+                            "CloseDate": {
+                                "type": ["string", "null"],
+                                "format": "date"
+                            },
+                            "ContactId": {
+                                "type": ["string", "null"]
+                            },
+                            "Filial__c": {
+                                "type": ["string", "null"]
+                            },
+                            "IsDeleted": {
+                                "type": ["boolean", "null"]
+                            },
+                            "Market__c": {
+                                "type": ["string", "null"]
+                            },
+                            "Obs_NF__c": {
+                                "type": ["string", "null"]
+                            },
+                            "PushCount": {
+                                "type": ["integer", "null"]
+                            },
+                            "StageName": {
+                                "type": ["string", "null"]
+                            },
+                            "CampaignId": {
+                                "type": ["string", "null"]
+                            },
+                            "ContractId": {
+                                "type": ["string", "null"]
+                            },
+                            "Divisao__c": {
+                                "type": ["string", "null"]
+                            },
+                            "FiscalYear": {
+                                "type": ["integer", "null"]
+                            },
+                            "LeadSource": {
+                                "type": ["string", "null"]
+                            },
+                            "Produto__c": {
+                                "type": ["string", "null"]
+                            },
+                            "CreatedById": {
+                                "type": ["string", "null"]
+                            },
+                            "CreatedDate": {
+                                "type": ["string", "null"],
+                                "format": "date-time"
+                            },
+                            "Deposito__c": {
+                                "type": ["string", "null"]
+                            },
+                            "Desconto__c": {
+                                "type": ["number", "null"]
+                            },
+                            "Description": {
+                                "type": ["string", "null"]
+                            },
+                            "Probability": {
+                                "type": ["number", "null"]
+                            },
+                            "Segmento__c": {
+                                "type": ["string", "null"]
+                            },
+                            "Aprovador__c": {
+                                "type": ["string", "null"]
+                            },
+                            "Embalagem__c": {
+                                "type": ["string", "null"]
+                            },
+                            "IPP_Dolar__c": {
+                                "type": ["number", "null"]
+                            },
+                            "IPP_Ratio__c": {
+                                "type": ["number", "null"]
+                            },
+                            "Id_matriz__c": {
+                                "type": ["string", "null"]
+                            },
+                            "Pricebook2Id": {
+                                "type": ["string", "null"]
+                            },
+                            "Trimestre__c": {
+                                "type": ["number", "null"]
+                            },
+                            "Codigo_SAP__c": {
+                                "type": ["string", "null"]
+                            },
+                            "Consignado__c": {
+                                "type": ["string", "null"]
+                            },
+                            "ExternalID__c": {
+                                "type": ["string", "null"]
+                            },
+                            "FiscalQuarter": {
+                                "type": ["integer", "null"]
+                            },
+                            "Nro_Pedido__c": {
+                                "type": ["string", "null"]
+                            },
+                            "PIS_COFINS__c": {
+                                "type": ["number", "null"]
+                            },
+                            "SyncedQuoteId": {
+                                "type": ["string", "null"]
+                            },
+                            "Tipo_Frete__c": {
+                                "type": ["string", "null"]
+                            },
+                            "Cod_Empresa__c": {
+                                "type": ["string", "null"]
+                            },
+                            "Custo_Total__c": {
+                                "type": ["number", "null"]
+                            },
+                            "Dolar_Venda__c": {
+                                "type": ["number", "null"]
+                            },
+                            "Dolar_lista__c": {
+                                "type": ["number", "null"]
+                            },
+                            "HasOverdueTask": {
+                                "type": ["boolean", "null"]
+                            },
+                            "LastViewedDate": {
+                                "type": ["string", "null"],
+                                "format": "date-time"
+                            },
+                            "Loss_Reason__c": {
+                                "type": ["string", "null"]
+                            },
+                            "Observacoes__c": {
+                                "type": ["string", "null"]
+                            },
+                            "Organizacao__c": {
+                                "type": ["string", "null"]
+                            },
+                            "Preco_Bruto__c": {
+                                "type": ["number", "null"]
+                            },
+                            "Preco_Total__c": {
+                                "type": ["number", "null"]
+                            },
+                            "SystemModstamp": {
+                                "type": ["string", "null"],
+                                "format": "date-time"
+                            },
+                            "Uso_Produto__c": {
+                                "type": ["string", "null"]
+                            },
+                            "Valor_Venda__c": {
+                                "type": ["number", "null"]
+                            },
+                            "Aprovado_por__c": {
+                                "type": ["string", "null"]
+                            },
+                            "Decreto_4852__c": {
+                                "type": ["number", "null"]
+                            },
+                            "Em_Aprovacao__c": {
+                                "type": ["boolean", "null"]
+                            },
+                            "HasOpenActivity": {
+                                "type": ["boolean", "null"]
+                            },
+                            "Margem_Final__c": {
+                                "type": ["number", "null"]
+                            },
+                            "Programacoes__c": {
+                                "type": ["string", "null"]
+                            },
+                            "Saldo_Pedido__c": {
+                                "type": ["number", "null"]
+                            },
+                            "TimeStampSAP__c": {
+                                "type": ["string", "null"],
+                                "format": "date-time"
+                            },
+                            "Valor_SISCOM__c": {
+                                "type": ["number", "null"]
+                            },
+                            "Chave_Externa__c": {
+                                "type": ["string", "null"]
+                            },
+                            "Data_Validade__c": {
+                                "type": ["string", "null"],
+                                "format": "date"
+                            },
+                            "DecretoEncImp__c": {
+                                "type": ["number", "null"]
+                            },
+                            "ForecastCategory": {
+                                "type": ["string", "null"]
+                            },
+                            "LastActivityDate": {
+                                "type": ["string", "null"],
+                                "format": "date"
+                            },
+                            "LastModifiedById": {
+                                "type": ["string", "null"]
+                            },
+                            "LastModifiedDate": {
+                                "type": ["string", "null"],
+                                "format": "date-time"
+                            },
+                            "Origem_Pedido__c": {
+                                "type": ["string", "null"]
+                            },
+                            "Preco_Bruto_t__c": {
+                                "type": ["number", "null"]
+                            },
+                            "Preco_Final_t__c": {
+                                "type": ["number", "null"]
+                            },
+                            "Preco_Total_t__c": {
+                                "type": ["number", "null"]
+                            },
+                            "Representante__c": {
+                                "type": ["string", "null"]
+                            },
+                            "Cliente_Filial__c": {
+                                "type": ["string", "null"]
+                            },
+                            "Codigo_Produto__c": {
+                                "type": ["string", "null"]
+                            },
+                            "Contato_Pedido__c": {
+                                "type": ["string", "null"]
+                            },
+                            "Cotacao_Origem__c": {
+                                "type": ["string", "null"]
+                            },
+                            "Data_Pagamento__c": {
+                                "type": ["string", "null"],
+                                "format": "date"
+                            },
+                            "Destino_Pedido__c": {
+                                "type": ["string", "null"]
+                            },
+                            "Frete_Encargos__c": {
+                                "type": ["number", "null"]
+                            },
+                            "Margem_Inicial__c": {
+                                "type": ["number", "null"]
+                            },
+                            "Nome_Aprovador__c": {
+                                "type": ["string", "null"]
+                            },
+                            "Valor_do_Frete__c": {
+                                "type": ["number", "null"]
+                            },
+                            "Aprovador_Final__c": {
+                                "type": ["string", "null"]
+                            },
+                            "Data_Vencimento__c": {
+                                "type": ["string", "null"],
+                                "format": "date"
+                            },
+                            "Desconto_Pedido__c": {
+                                "type": ["number", "null"]
+                            },
+                            "IPP_Ratio_Final__c": {
+                                "type": ["number", "null"]
+                            },
+                            "LastReferencedDate": {
+                                "type": ["string", "null"],
+                                "format": "date-time"
+                            },
+                            "Nro_Cotacao_SAP__c": {
+                                "type": ["string", "null"]
+                            },
+                            "Pais_Triangular__c": {
+                                "type": ["string", "null"]
+                            },
+                            "Preco_Lista_BRL__c": {
+                                "type": ["number", "null"]
+                            },
+                            "Preco_Negociado__c": {
+                                "type": ["number", "null"]
+                            },
+                            "Setor_Atividade__c": {
+                                "type": ["string", "null"]
+                            },
+                            "Aprovador_Portal__c": {
+                                "type": ["string", "null"]
+                            },
+                            "Budget_Confirmed__c": {
+                                "type": ["boolean", "null"]
+                            },
+                            "Email_do_Contato__c": {
+                                "type": ["string", "null"]
+                            },
+                            "LastStageChangeDate": {
+                                "type": ["string", "null"],
+                                "format": "date-time"
+                            },
+                            "Valor_Consignado__c": {
+                                "type": ["number", "null"]
+                            },
+                            "Venda_Dolarizada__c": {
+                                "type": ["string", "null"]
+                            },
+                            "Aprovador_Gerente__c": {
+                                "type": ["string", "null"]
+                            },
+                            "Data_Envio_SISCOM__c": {
+                                "type": ["string", "null"],
+                                "format": "date-time"
+                            },
+                            "Erro_de_Integra_o__c": {
+                                "type": ["string", "null"]
+                            },
+                            "ForecastCategoryName": {
+                                "type": ["string", "null"]
+                            },
+                            "Sequencial_Pedido__c": {
+                                "type": ["number", "null"]
+                            },
+                            "Valor_Venda_Dolar__c": {
+                                "type": ["number", "null"]
+                            },
+                            "Nro_Pedido_Cliente__c": {
+                                "type": ["string", "null"]
+                            },
+                            "Ordem_Venda_Origem__c": {
+                                "type": ["string", "null"]
+                            },
+                            "Discovery_Completed__c": {
+                                "type": ["boolean", "null"]
+                            },
+                            "HasOpportunityLineItem": {
+                                "type": ["boolean", "null"]
+                            },
+                            "Nome_Cidade_Entrega__c": {
+                                "type": ["string", "null"]
+                            },
+                            "Preco_Lista_Cliente__c": {
+                                "type": ["number", "null"]
+                            },
+                            "Quantidade_Original__c": {
+                                "type": ["number", "null"]
+                            },
+                            "Quantidade_Restante__c": {
+                                "type": ["number", "null"]
+                            },
+                            "Tipo_pedido_formula__c": {
+                                "type": ["string", "null"]
+                            },
+                            "Valor_Cotacao_Dolar__c": {
+                                "type": ["number", "null"]
+                            },
+                            "Chave_Externa_Origem__c": {
+                                "type": ["string", "null"]
+                            },
+                            "Encargos_Financeiros__c": {
+                                "type": ["number", "null"]
+                            },
+                            "Preco_Net_Relatorio2__c": {
+                                "type": ["number", "null"]
+                            },
+                            "Status_Pedido_SISCOM__c": {
+                                "type": ["string", "null"]
+                            },
+                            "Status_da_Integracao__c": {
+                                "type": ["string", "null"]
+                            },
+                            "Encargos_FinanceirosC__c": {
+                                "type": ["number", "null"]
+                            },
+                            "Nro_Pedido_Eletronico__c": {
+                                "type": ["string", "null"]
+                            },
+                            "Preco_Total_Descontos__c": {
+                                "type": ["number", "null"]
+                            },
+                            "Preco_final_negociado__c": {
+                                "type": ["number", "null"]
+                            },
+                            "Quantidade_Consignada__c": {
+                                "type": ["number", "null"]
+                            },
+                            "Quantidade_Programada__c": {
+                                "type": ["number", "null"]
+                            },
+                            "Valor_Total_Relatorio__c": {
+                                "type": ["number", "null"]
+                            },
+                            "Bonificacao_Contratual__c": {
+                                "type": ["string", "null"]
+                            },
+                            "Codigo_SAP_do_Vendedor__c": {
+                                "type": ["string", "null"]
+                            },
+                            "Data_Aprovacao_Gerente__c": {
+                                "type": ["string", "null"],
+                                "format": "date-time"
+                            },
+                            "ROI_Analysis_Completed__c": {
+                                "type": ["boolean", "null"]
+                            },
+                            "Saldo_Pedido_em_Aberto__c": {
+                                "type": ["number", "null"]
+                            },
+                            "Status_Ordem_Venda_SAP__c": {
+                                "type": ["string", "null"]
+                            },
+                            "Cancelado_pelo_vendedor__c": {
+                                "type": ["boolean", "null"]
+                            },
+                            "DataHora_Integracao_SAP__c": {
+                                "type": ["string", "null"],
+                                "format": "date-time"
+                            },
+                            "Data_Atualizacao_SISCOM__c": {
+                                "type": ["string", "null"],
+                                "format": "date-time"
+                            },
+                            "Data_Hora_da_Integracao__c": {
+                                "type": ["string", "null"],
+                                "format": "date-time"
+                            },
+                            "LastAmountChangedHistoryId": {
+                                "type": ["string", "null"]
+                            },
+                            "QuantidadeTotalEntregue__c": {
+                                "type": ["number", "null"]
+                            },
+                            "Validacao_da_Integracao__c": {
+                                "type": ["string", "null"]
+                            },
+                            "Impacto_Total_na_Receita__c": {
+                                "type": ["number", "null"]
+                            },
+                            "Status_Aprovacao_Cliente__c": {
+                                "type": ["string", "null"]
+                            },
+                            "Justificativa_do_desconto__c": {
+                                "type": ["string", "null"]
+                            },
+                            "Quantidade_Total_Entregue__c": {
+                                "type": ["number", "null"]
+                            },
+                            "Quantidade_Total_Estimado__c": {
+                                "type": ["number", "null"]
+                            },
+                            "Valor_Total_Notas_Fiscais__c": {
+                                "type": ["number", "null"]
+                            },
+                            "Bonificacao_Contratual_pct__c": {
+                                "type": ["number", "null"]
+                            },
+                            "LastCloseDateChangedHistoryId": {
+                                "type": ["string", "null"]
+                            },
+                            "Preco_final_negociado_total__c": {
+                                "type": ["number", "null"]
+                            },
+                            "Segundo_Aprovador_Diretoria__c": {
+                                "type": ["string", "null"]
+                            },
+                            "Tipo_de_Operacao_Triangular__c": {
+                                "type": ["string", "null"]
+                            },
+                            "Nao_Enviar_Aprovacao_Cliente__c": {
+                                "type": ["boolean", "null"]
+                            },
+                            "Cliente_da_Opera_o_Triangular__c": {
+                                "type": ["string", "null"]
+                            },
+                            "Email_Implantador_Ordem_Venda__c": {
+                                "type": ["string", "null"]
+                            },
+                            "Justificativa_do_cancelamento__c": {
+                                "type": ["string", "null"]
+                            },
+                            "Quantidade_Remessa_Bonificacao__c": {
+                                "type": ["number", "null"]
+                            },
+                            "Transportadora_Inscrita_em_Goias__c": {
+                                "type": ["string", "null"]
+                            },
+                            "Justificativa_Solicitacao_Desconto__c": {
+                                "type": ["string", "null"]
+                            }
+                        },
+                        "additionalProperties": true
+                    },
+                    "supportedSyncModes": ["full_refresh", "incremental"],
+                    "sourceDefinedCursor": true,
+                    "defaultCursorField": ["SystemModstamp"],
+                    "sourceDefinedPrimaryKey": [["Id"]]
+                },
+                "config": {
+                    "syncMode": "full_refresh",
+                    "cursorField": ["SystemModstamp"],
+                    "destinationSyncMode": "overwrite",
+                    "primaryKey": [["Id"]],
+                    "aliasName": "Opportunity",
+                    "selected": true,
+                    "fieldSelectionEnabled": false
+                }
+            }
+        ]
+    }
+}

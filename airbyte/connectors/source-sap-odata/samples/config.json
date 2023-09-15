@@ -1,0 +1,8 @@
+{
+    "host": "http://cm7s4hap1q.cmocbrasil.com",
+    "port": 8020,
+    "username": "stor01",
+    "password": "@Mil961@",
+    "batch": 10,
+    "limit": 100
+}

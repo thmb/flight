@@ -1,0 +1,323 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "__count": {
+            "type": ["null", "string"]
+        },
+        "results": {
+            "type": ["null", "array"],
+            "items": {
+                "type": ["null", "object"],
+                "properties": {
+                    "ID": {
+                        "type": ["null", "string"]
+                    },
+                    "SalesOrder": {
+                        "type": ["null", "string"]
+                    },
+                    "SalesOrderType": {
+                        "type": ["null", "string"]
+                    },
+                    "SalesOrderProcessingType": {
+                        "type": ["null", "string"]
+                    },
+                    "CreatedByUser": {
+                        "type": ["null", "string"]
+                    },
+                    "LastChangedByUser": {
+                        "type": ["null", "string"]
+                    },
+                    "CreationDate": {
+                        "type": ["null", "string"]
+                    },
+                    "CreationTime": {
+                        "type": ["null", "string"]
+                    },
+                    "LastChangeDate": {
+                        "type": ["null", "string"]
+                    },
+                    "LastChangeDateTime": {
+                        "type": ["null", "string"]
+                    },
+                    "SalesOrganization": {
+                        "type": ["null", "string"]
+                    },
+                    "DistributionChannel": {
+                        "type": ["null", "string"]
+                    },
+                    "OrganizationDivision": {
+                        "type": ["null", "string"]
+                    },
+                    "SalesGroup": {
+                        "type": ["null", "string"]
+                    },
+                    "SalesOffice": {
+                        "type": ["null", "string"]
+                    },
+                    "SoldToParty": {
+                        "type": ["null", "string"]
+                    },
+                    "CustomerGroup": {
+                        "type": ["null", "string"]
+                    },
+                    "AdditionalCustomerGroup1": {
+                        "type": ["null", "string"]
+                    },
+                    "AdditionalCustomerGroup2": {
+                        "type": ["null", "string"]
+                    },
+                    "AdditionalCustomerGroup3": {
+                        "type": ["null", "string"]
+                    },
+                    "AdditionalCustomerGroup4": {
+                        "type": ["null", "string"]
+                    },
+                    "AdditionalCustomerGroup5": {
+                        "type": ["null", "string"]
+                    },
+                    "CreditControlArea": {
+                        "type": ["null", "string"]
+                    },
+                    "CreditControlArea_Text": {
+                        "type": ["null", "string"]
+                    },
+                    "CustomerRebateAgreement": {
+                        "type": ["null", "string"]
+                    },
+                    "SalesOrderDate": {
+                        "type": ["null", "string"]
+                    },
+                    "ServicesRenderedDate": {
+                        "type": ["null", "string"]
+                    },
+                    "SDDocumentReason": {
+                        "type": ["null", "string"]
+                    },
+                    "PurchaseOrderByCustomer": {
+                        "type": ["null", "string"]
+                    },
+                    "SDDocumentCollectiveNumber": {
+                        "type": ["null", "string"]
+                    },
+                    "CustomerPurchaseOrderType": {
+                        "type": ["null", "string"]
+                    },
+                    "CustomerPurchaseOrderDate": {
+                        "type": ["null", "string"]
+                    },
+                    "CustomerPurchaseOrderSuplmnt": {
+                        "type": ["null", "string"]
+                    },
+                    "SalesDistrict": {
+                        "type": ["null", "string"]
+                    },
+                    "StatisticsCurrency": {
+                        "type": ["null", "string"]
+                    },
+                    "ProductCatalog": {
+                        "type": ["null", "string"]
+                    },
+                    "NextCreditCheckDate": {
+                        "type": ["null", "string"]
+                    },
+                    "TotalNetAmount": {
+                        "type": ["null", "string"]
+                    },
+                    "TransactionCurrency": {
+                        "type": ["null", "string"]
+                    },
+                    "PricingDate": {
+                        "type": ["null", "string"]
+                    },
+                    "RetailPromotion": {
+                        "type": ["null", "string"]
+                    },
+                    "SalesOrderCondition": {
+                        "type": ["null", "string"]
+                    },
+                    "RequestedDeliveryDate": {
+                        "type": ["null", "string"]
+                    },
+                    "ShippingType": {
+                        "type": ["null", "string"]
+                    },
+                    "ShippingCondition": {
+                        "type": ["null", "string"]
+                    },
+                    "IncotermsClassification": {
+                        "type": ["null", "string"]
+                    },
+                    "IncotermsTransferLocation": {
+                        "type": ["null", "string"]
+                    },
+                    "IncotermsLocation1": {
+                        "type": ["null", "string"]
+                    },
+                    "IncotermsLocation2": {
+                        "type": ["null", "string"]
+                    },
+                    "IncotermsVersion": {
+                        "type": ["null", "string"]
+                    },
+                    "CompleteDeliveryIsDefined": {
+                        "type": ["null", "boolean"]
+                    },
+                    "DeliveryBlockReason": {
+                        "type": ["null", "string"]
+                    },
+                    "FashionCancelDate": {
+                        "type": ["null", "string"]
+                    },
+                    "BillingCompanyCode": {
+                        "type": ["null", "string"]
+                    },
+                    "HeaderBillingBlockReason": {
+                        "type": ["null", "string"]
+                    },
+                    "CustomerPaymentTerms": {
+                        "type": ["null", "string"]
+                    },
+                    "PaymentMethod": {
+                        "type": ["null", "string"]
+                    },
+                    "FixedValueDate": {
+                        "type": ["null", "string"]
+                    },
+                    "FiscalYear": {
+                        "type": ["null", "string"]
+                    },
+                    "FiscalPeriod": {
+                        "type": ["null", "string"]
+                    },
+                    "ExchangeRateDate": {
+                        "type": ["null", "string"]
+                    },
+                    "ExchangeRateType": {
+                        "type": ["null", "string"]
+                    },
+                    "BusinessArea": {
+                        "type": ["null", "string"]
+                    },
+                    "BusinessArea_Text": {
+                        "type": ["null", "string"]
+                    },
+                    "CustomerAccountAssignmentGroup": {
+                        "type": ["null", "string"]
+                    },
+                    "CostCenterBusinessArea": {
+                        "type": ["null", "string"]
+                    },
+                    "CostCenterBusinessArea_Text": {
+                        "type": ["null", "string"]
+                    },
+                    "CostCenter": {
+                        "type": ["null", "string"]
+                    },
+                    "ControllingArea": {
+                        "type": ["null", "string"]
+                    },
+                    "OrderID": {
+                        "type": ["null", "string"]
+                    },
+                    "ControllingObject": {
+                        "type": ["null", "string"]
+                    },
+                    "AssignmentReference": {
+                        "type": ["null", "string"]
+                    },
+                    "PaymentPlan": {
+                        "type": ["null", "string"]
+                    },
+                    "ReferenceSDDocument": {
+                        "type": ["null", "string"]
+                    },
+                    "ReferenceSDDocumentCategory": {
+                        "type": ["null", "string"]
+                    },
+                    "OverallSDProcessStatus": {
+                        "type": ["null", "string"]
+                    },
+                    "OverallPurchaseConfStatus": {
+                        "type": ["null", "string"]
+                    },
+                    "OverallSDDocumentRejectionSts": {
+                        "type": ["null", "string"]
+                    },
+                    "TotalBlockStatus": {
+                        "type": ["null", "string"]
+                    },
+                    "OverallDelivConfStatus": {
+                        "type": ["null", "string"]
+                    },
+                    "OverallTotalDeliveryStatus": {
+                        "type": ["null", "string"]
+                    },
+                    "OverallDeliveryStatus": {
+                        "type": ["null", "string"]
+                    },
+                    "OverallDeliveryBlockStatus": {
+                        "type": ["null", "string"]
+                    },
+                    "OverallOrdReltdBillgStatus": {
+                        "type": ["null", "string"]
+                    },
+                    "OverallBillingBlockStatus": {
+                        "type": ["null", "string"]
+                    },
+                    "OverallTotalSDDocRefStatus": {
+                        "type": ["null", "string"]
+                    },
+                    "OverallSDDocReferenceStatus": {
+                        "type": ["null", "string"]
+                    },
+                    "TotalCreditCheckStatus": {
+                        "type": ["null", "string"]
+                    },
+                    "MaxDocValueCreditCheckStatus": {
+                        "type": ["null", "string"]
+                    },
+                    "PaymentTermCreditCheckStatus": {
+                        "type": ["null", "string"]
+                    },
+                    "FinDocCreditCheckStatus": {
+                        "type": ["null", "string"]
+                    },
+                    "ExprtInsurCreditCheckStatus": {
+                        "type": ["null", "string"]
+                    },
+                    "PaytAuthsnCreditCheckSts": {
+                        "type": ["null", "string"]
+                    },
+                    "CentralCreditCheckStatus": {
+                        "type": ["null", "string"]
+                    },
+                    "CentralCreditChkTechErrSts": {
+                        "type": ["null", "string"]
+                    },
+                    "HdrGeneralIncompletionStatus": {
+                        "type": ["null", "string"]
+                    },
+                    "OverallPricingIncompletionSts": {
+                        "type": ["null", "string"]
+                    },
+                    "HeaderDelivIncompletionStatus": {
+                        "type": ["null", "string"]
+                    },
+                    "HeaderBillgIncompletionStatus": {
+                        "type": ["null", "string"]
+                    },
+                    "OvrlItmGeneralIncompletionSts": {
+                        "type": ["null", "string"]
+                    },
+                    "OvrlItmBillingIncompletionSts": {
+                        "type": ["null", "string"]
+                    },
+                    "OvrlItmDelivIncompletionSts": {
+                        "type": ["null", "string"]
+                    }
+                }
+            }
+        }
+    }
+}

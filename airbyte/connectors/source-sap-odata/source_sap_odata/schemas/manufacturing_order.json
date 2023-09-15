@@ -1,0 +1,374 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+        "__count": {
+            "type": ["null", "string"]
+        },
+        "results": {
+            "type": ["null", "array"],
+            "items": {
+                "type": ["null", "object"],
+                "properties": {
+                    "ManufacturingOrder": {
+                        "type": ["null", "string"]
+                    },
+                    "ManufacturingOrderCategory": {
+                        "type": ["null", "string"]
+                    },
+                    "ManufacturingOrderType": {
+                        "type": ["null", "string"]
+                    },
+                    "ManufacturingOrderText": {
+                        "type": ["null", "string"]
+                    },
+                    "ManufacturingOrderHasLongText": {
+                        "type": ["null", "boolean"] 
+                    },
+                    "LongTextLanguageCode": {
+                        "type": ["null", "boolean"]
+                    },
+                    "ManufacturingOrderImportance": {
+                        "type": ["null", "string"]
+                    },
+                    "IsMarkedForDeletion": {
+                        "type": ["null", "boolean"]
+                    },
+                    "IsCompletelyDelivered": {
+                        "type": ["null", "boolean"]
+                    },
+                    "MfgOrderHasMultipleItems": {
+                        "type": ["null", "string"]
+                    },
+                    "MfgOrderIsPartOfCollvOrder": {
+                        "type": ["null", "string"]
+                    },
+                    "MfgOrderHierarchyLevel": {
+                        "type": ["null", "string"]
+                    },
+                    "OrderIsNotCostedAutomatically": {
+                        "type": ["null", "string"]
+                    },
+                    "OrdIsNotSchedldAutomatically": {
+                        "type": ["null", "string"]
+                    },
+                    "CreationDate": {
+                        "type": ["null", "string"] 
+                    },
+                    "CreationTime": {
+                        "type": ["null", "string"]
+                    },
+                    "OcdqtyBu": {
+                        "type": ["null", "string"]
+                    },
+                    "CreatedByUser": {
+                        "type": ["null", "string"]
+                    },
+                    "LastChangeDate": {
+                        "type": ["null", "string"]
+                    },
+                    "LastChangeTime": {
+                        "type": ["null", "string"]
+                    },
+                    "LastChangedByUser": {
+                        "type": ["null", "string"]
+                    },
+                    "Material": {
+                        "type": ["null", "string"]
+                    },
+                    "Product": {
+                        "type": ["null", "string"]
+                    },
+                    "StorageLocation": {
+                        "type": ["null", "string"]
+                    },
+                    "GoodsRecipientName": {
+                        "type": ["null", "string"]
+                    },
+                    "UnloadingPointName": {
+                        "type": ["null", "string"]
+                    },
+                    "InventoryUsabilityCode": {
+                        "type": ["null", "string"]
+                    },
+                    "MaterialGoodsReceiptDuration": {
+                        "type": ["null", "string"] 
+                    },
+                    "QuantityDistributionKey": {
+                        "type": ["null", "string"]
+                    },
+                    "StockSegment": {
+                        "type": ["null", "string"]
+                    },
+                    "MfgOrderInternalID": {
+                        "type": ["null", "string"]
+                    },
+                    "ReferenceOrder": {
+                        "type": ["null", "string"]
+                    },
+                    "LeadingOrder": {
+                        "type": ["null", "string"]
+                    },
+                    "SuperiorOrder": {
+                        "type": ["null", "string"] 
+                    },
+                    "Currency": {
+                        "type": ["null", "string"]
+                    },
+                    "ProductionPlant": {
+                        "type": ["null", "string"]
+                    },
+                    "PlanningPlant": {
+                        "type": ["null", "string"]
+                    },
+                    "MRPArea": {
+                        "type": ["null", "string"]
+                    },
+                    "MRPController": {
+                        "type": ["null", "string"]
+                    },
+                    "ProductionSupervisor": {
+                        "type": ["null", "string"]
+                    },
+                    "ProductionSchedulingProfile": {
+                        "type": ["null", "string"]
+                    },
+                    "ResponsiblePlannerGroup": {
+                        "type": ["null", "string"]
+                    },
+                    "ProductionVersion": {
+                        "type": ["null", "string"]
+                    },
+                    "SalesOrder": {
+                        "type": ["null", "string"]
+                    },
+                    "SalesOrderItem": {
+                        "type": ["null", "string"]
+                    },
+                    "WBSElementInternalID": {
+                        "type": ["null", "string"]
+                    },
+                    "Reservation": {
+                        "type": ["null", "string"]
+                    },
+                    "SettlementReservation": {
+                        "type": ["null", "string"]
+                    },
+                    "MfgOrderConfirmation": {
+                        "type": ["null", "string"]
+                    },
+                    "NumberOfMfgOrderConfirmations": {
+                        "type": ["null", "string"]
+                    },
+                    "PlannedOrder": {
+                        "type": ["null", "string"]
+                    },
+                    "CapacityRequirement": {
+                        "type": ["null", "string"]
+                    },
+                    "InspectionLot": {
+                        "type": ["null", "string"]
+                    },
+                    "ChangeNumber": {
+                        "type": ["null", "string"]
+                    },
+                    "BasicSchedulingType": {
+                        "type": ["null", "string"]
+                    },
+                    "ForecastSchedulingType": {
+                        "type": ["null", "string"]
+                    },
+                    "ObjectInternalID": {
+                        "type": ["null", "string"]
+                    },
+                    "ProductConfiguration": {
+                        "type": ["null", "string"]
+                    },
+                    "EffectivityParameterVariant": {
+                        "type": ["null", "string"]
+                    },
+                    "ConditionApplication": {
+                        "type": ["null", "string"]
+                    },
+                    "CapacityActiveVersion": {
+                        "type": ["null", "string"]
+                    },
+                    "CapacityRqmtHasNotToBeCreated": {
+                        "type": ["null", "boolean"]
+                    },
+                    "OrderSequenceNumber": {
+                        "type": ["null", "string"]
+                    },
+                    "BillOfOperationsMaterial": {
+                        "type": ["null", "string"]
+                    },
+                    "BillOfOperationsType": {
+                        "type": ["null", "string"]
+                    },
+                    "BillOfOperations": {
+                        "type": ["null", "string"]
+                    },
+                    "BillOfOperationsVariant": {
+                        "type": ["null", "string"]
+                    },
+                    "BOOInternalVersionCounter": {
+                        "type": ["null", "string"]
+                    },
+                    "BillOfOperationsUsage": {
+                        "type": ["null", "string"]
+                    },
+                    "BillOfOperationsVersion": {
+                        "type": ["null", "string"]
+                    },
+                    "BOOExplosionDate": {
+                        "type": ["null", "string"]
+                    },
+                    "BOOValidityStartDate": {
+                        "type": ["null", "string"]
+                    },
+                    "BillOfMaterialCategory": {
+                        "type": ["null", "string"]
+                    },
+                    "BillOfMaterial": {
+                        "type": ["null", "string"]
+                    },
+                    "BillOfMaterialVariant": {
+                        "type": ["null", "string"]
+                    },
+                    "BillOfMaterialVariantUsage": {
+                        "type": ["null", "string"]
+                    },
+                    "BillOfMaterialVersion": {
+                        "type": ["null", "string"]
+                    },
+                    "BOMExplosionDate": {
+                        "type": ["null", "string"]
+                    },                    
+                    "BOMValidityStartDate": {
+                        "type": ["null", "string"]
+                    },
+                    "BusinessArea": {
+                        "type": ["null", "string"]
+                    },
+                    "CompanyCode": {
+                        "type": ["null", "string"]
+                    },
+                    "ControllingArea": {
+                        "type": ["null", "string"]
+                    },
+                    "ProfitCenter": {
+                        "type": ["null", "string"]
+                    },
+                    "CostCenter": {
+                        "type": ["null", "string"]
+                    },
+                    "ResponsibleCostCenter": {
+                        "type": ["null", "string"]
+                    },
+                    "CostElement": {
+                        "type": ["null", "string"]
+                    },                    
+                    "CostingSheet": {
+                        "type": ["null", "string"]
+                    },
+                    "GLAccount": {
+                        "type": ["null", "string"]
+                    },
+                    "ProductCostCollector": {
+                        "type": ["null", "string"]
+                    },
+                    "ActualCostsCostingVariant": {
+                        "type": ["null", "string"]
+                    },                    
+                    "PlannedCostsCostingVariant": {
+                        "type": ["null", "string"]
+                    },
+                    "ControllingObjectClass": {
+                        "type": ["null", "string"]
+                    },
+                    "FunctionalArea": {
+                        "type": ["null", "string"]
+                    },
+                    "MfgOrderPlannedStartDate": {
+                        "type": ["null", "string"]
+                    },                    
+                    "MfgOrderPlannedStartTime": {
+                        "type": ["null", "string"]
+                    },
+                    "MfgOrderPlannedEndDate": {
+                        "type": ["null", "string"]
+                    },
+                    "MfgOrderPlannedEndTime": {
+                        "type": ["null", "string"]
+                    },
+                    "MfgOrderPlannedReleaseDate": {
+                        "type": ["null", "string"]
+                    },                    
+                    "MfgOrderScheduledStartDate": {
+                        "type": ["null", "string"]
+                    },
+                    "MfgOrderScheduledStartTime": {
+                        "type": ["null", "string"]
+                    },
+                    "MfgOrderScheduledEndDate": {
+                        "type": ["null", "string"]
+                    },
+                    "MfgOrderScheduledEndTime": {
+                        "type": ["null", "string"]
+                    },                    
+                    "MfgOrderScheduledReleaseDate": {
+                        "type": ["null", "string"]
+                    },
+                    "MfgOrderActualStartDate": {
+                        "type": ["null", "string"]
+                    },
+                    "MfgOrderActualStartTime": {
+                        "type": ["null", "string"]
+                    },
+                    "MfgOrderActualEndDate": {
+                        "type": ["null", "string"]
+                    },                    
+                    "MfgOrderActualReleaseDate": {
+                        "type": ["null", "string"]
+                    },
+                    "MfgOrderConfirmedEndDate": {
+                        "type": ["null", "string"]
+                    },
+                    "MfgOrderConfirmedEndTime": {
+                        "type": ["null", "string"]
+                    },
+                    "MfgOrderTotalCommitmentDate": {
+                        "type": ["null", "string"]
+                    },                    
+                    "MfgOrderItemActualDeliveryDate": {
+                        "type": ["null", "string"]
+                    },
+                    "ProductionUnit": {
+                        "type": ["null", "string"]
+                    },
+                    "MfgOrderPlannedTotalQty": {
+                        "type": ["null", "string"]
+                    },
+                    "MfgOrderPlannedScrapQty": {
+                        "type": ["null", "string"]
+                    },                    
+                    "MfgOrderConfirmedYieldQty": {
+                        "type": ["null", "string"]
+                    },
+                    "MfgOrderConfirmedScrapQty": {
+                        "type": ["null", "string"]
+                    },
+                    "MfgOrderConfirmedReworkQty": {
+                        "type": ["null", "string"]
+                    },
+                    "ExpectedDeviationQuantity": {
+                        "type": ["null", "string"]
+                    },                    
+                    "ActualDeliveredQuantity": {
+                        "type": ["null", "string"]
+                    }
+                }
+            }
+        }
+    }
+}
