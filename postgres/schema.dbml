@@ -1,0 +1,92 @@
+Table authentications {
+  pilot_id uuid [pk, ref: - pilots.id]
+  username varchar(64) [not null]
+  password varchar(128) [not null]
+  version timestamptz [not null, default: `now()`]
+  Indexes {
+    username
+    password
+    version
+  }
+}
+
+Table authorizations {
+  pilot_id uuid [ref: > pilots.id]
+  role_id uuid [ref: > roles.id]
+  Indexes {
+    (pilot_id, role_id) [pk]
+  }
+}
+
+Table roles {
+  id uuid [pk, default: `uuid_generate_v4()`]
+  name varchar(32) [not null]
+  permissions "varchar(32)[]" [not null]
+  version timestamptz [not null, default: `now()`]
+  Indexes {
+    name
+    version
+  }
+}
+
+Table pilots {
+  id uuid [pk, default: `uuid_generate_v4()`]
+  name varchar(64) [not null]
+  email varchar(64) [not null]
+  profile jsonb [note: 'generic information']
+  licenses "varchar(32)[]" [not null, note: 'match requirements']
+  certificate text [note: 'medical certificate ']
+  payment double [note: 'amount per hour ']
+  version timestamptz [not null, default: `now()`]
+  Indexes {
+    name
+    email
+    profile
+    licenses
+    certificate
+    payment
+    version
+  }
+}
+
+Table flights {
+  id uuid [pk, default: `uuid_generate_v4()`]
+  previous_id uuid [ref: - flights.id, note: 'connection flight']
+  pilot_id uuid [ref: > pilots.id, note: 'allows null for project plan']
+  aircraft_id uuid [ref: > aircrafts.id, not null]
+  origin varchar(4) [not null]
+  destination varchar(4) [not null]
+  departure timestamptz
+  duration float [note: 'in hours']
+  version timestamptz [not null, default: `now()`]
+  Indexes {
+    previous_id
+    pilot_id
+    aircraft_id
+    origin
+    destination
+    departure
+    duration
+    version
+  }
+}
+
+Table aircrafts {
+  id uuid [pk, default: `uuid_generate_v4()`]
+  type varchar(4)
+  company varchar(64)
+  capacity interger [note: 'EUR or Bitcoin']
+  logbooks jsonb[] [not null, note: 'type, date, pilot, content']
+  maintenance boolean [not null, default: `false`]
+  location geometry(point,4326)
+  version timestamptz [not null, default: `now()`]
+  Indexes {
+    type
+    company
+    capacity
+    logbooks
+    maintenance
+    location
+    version
+  }
+}
