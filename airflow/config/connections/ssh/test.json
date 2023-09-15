@@ -1,0 +1,8 @@
+{
+    "conn_type": "ssh",
+    "connection_id": "transform",
+    "host": "10.15.4.13",
+    "port": 22,
+    "login": "datalake_admin",
+    "password": "SQX4RN?ar4wty4##TNQNIYsgw"
+}
