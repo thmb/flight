@@ -1,0 +1,49 @@
+flight
+    airflow
+    airbyte
+    dbt
+    superset
+
+    nuxt
+    fastapi
+
+    sklearn
+    tensorflow
+
+    postgres (schema)
+    minio (datasets)
+
+    *kafka, redis, mongodb, ...
+
+    docker
+        build.sh
+        Dockerfile.airflow
+        Dockerfile.dbt-postgres (redshift)
+        Dockerfile.nuxt-client
+        Dockerfile.nuxt-server
+        Dockerfile.fastapi
+
+    kubernetes
+        README.md (production considerations)
+        helm (development)
+            compute -> spark
+            storage -> minio + pgadmin + postgres
+            webapp -> nginx + gunicorn|nodejs
+            workflow -> airflow(dbt) + airbyte
+            analytics -> superset
+            monitor -> prometheus
+
+
+helm
+    charts
+        minio
+        pgadmin (:latest)
+        postgres (uuid + postgis)
+        jupiter (jupyter/pyspark-notebook:latest)
+        pyspark (apache/spark-py)
+        *redis, mongodb, ...
+
+
+site (nuxt)
+
+infra (terraform)
