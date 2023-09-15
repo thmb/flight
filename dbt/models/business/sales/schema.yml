@@ -1,0 +1,18 @@
+version: 2
+
+models:
+ - name: sales_resume
+   columns:
+    - name: sap_id
+    - name: salesorder
+    - name: soldtoparty
+    - name: sddocumentcollectivenumber
+    - name: referencesddocument
+    - name: totalnetamount
+    - name: transactioncurrency
+    - name: salesforce_id
+    - name: name
+    - name: chave_externa__c        
+    - name: nro_cotacao_sap__c
+    - name: nro_pedido__c
+    - name: chave_externa_origem__c    

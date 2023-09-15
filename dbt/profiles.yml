@@ -1,0 +1,25 @@
+transform:
+  target: main
+  outputs:
+
+    local:
+      type: postgres
+      threads: 1
+      host: localhost
+      port: 5432
+      user: postgresql
+      pass: postgresql
+      dbname: stage
+      schema: stor
+
+    main:
+      type: redshift
+      threads: 4
+      host: cmoc.960818729860.us-east-1.redshift-serverless.amazonaws.com
+      port: 5439
+      user: admin
+      pass: STORcmoc#23
+      dbname: analytics
+      schema: stage
+
+
