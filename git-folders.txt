@@ -28,6 +28,7 @@ flight
         helm (development)
             compute -> spark
             storage -> minio + pgadmin + postgres
+            stream -> kafka (kraft)
             webapp -> nginx + gunicorn|nodejs
             workflow -> airflow(dbt) + airbyte
             analytics -> superset
@@ -37,6 +38,7 @@ flight
 helm
     charts
         minio
+        nfsserver (bookworm?)
         pgadmin (:latest)
         postgres (uuid + postgis)
         jupiter (jupyter/pyspark-notebook:latest)
