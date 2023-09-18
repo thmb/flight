@@ -1,7 +1,7 @@
 provider "aws" {
   region = "us-east-1" # North Virginia (US)
-  access_key = "AKIAU25SIUHNICDVVZJA"
-  secret_key = "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"
+  access_key = ""
+  secret_key = ""
 }
 
 # 1. Create Virtual Private Network
@@ -122,12 +122,12 @@ resource "aws_instance" "main-server" {
     instance_type = "t4g.nano"
     availability_zone = "us-east-1a"
     key_name = "main-key"
-    
+
     network_interface {
       device_index = 0
       network_interface_id = aws_network_interface.main-network.id
     }
-    
+
     # user_data = <<-EOF
     #     #!/bin/bash
     #     sudo apt update -y
