@@ -26,21 +26,21 @@ flight
     kubernetes
         README.md (production considerations)
         helm (development)
-            compute -> spark
-            storage -> minio + pgadmin + postgres
-            stream -> kafka (kraft)
-            webapp -> nginx + gunicorn|nodejs
             workflow -> airflow(dbt) + airbyte
+            storage -> minio + pgadmin + postgres
             analytics -> superset
+            compute -> spark
+            webapp -> nginx + gunicorn|nodejs
+            stream -> kafka (kraft)
             monitor -> prometheus
 
 
 helm
     charts
-        minio
-        nfsserver (bookworm?)
+        [DONE] nfs (bookworm?)
+        [DONE] postgres (uuid + postgis)
+        [DONE] minio
         pgadmin (:latest)
-        postgres (uuid + postgis)
         jupiter (jupyter/pyspark-notebook:latest)
         pyspark (apache/spark-py)
         *redis, mongodb, ...
