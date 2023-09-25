@@ -8,11 +8,19 @@ minikube delete
 minikube config set cpus 4
 minikube config set memory 16GB
 minikube config set disk-size 40GB
-minikube config set driver kvm2
+minikube config set driver docker # kvm2
 
-minikube start
+https://minikube.sigs.k8s.io/docs/tutorials/static_ip/
+```console
+$ minikube start --static-ip 192.168.200.200
+```
 
-minikube addons enable ingress
+https://minikube.sigs.k8s.io/docs/handbook/addons/ingress-dns/
+```console
+$ minikube addons enable ingress
+$ minikube addons enable ingress-dns
+```
+
 minikube addons list
 
 ### Port Forward Example
