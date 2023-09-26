@@ -40,8 +40,8 @@ helm
         [DONE] nfs (bookworm?)
         [DONE] postgres (uuid + postgis)
         [DONE] minio
-        pgadmin (:latest)
-        jupiter (jupyter/pyspark-notebook:latest)
+        [DONE] pgadmin (:latest)
+        [DONE] jupiter (jupyter/pyspark-notebook:latest)
         pyspark (apache/spark-py)
         *redis, mongodb, ...
 
