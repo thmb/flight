@@ -11,11 +11,13 @@ minikube delete
 minikube config set cpus 4
 minikube config set memory 16GB
 minikube config set disk-size 40GB
-minikube config set driver docker # kvm2
+minikube config set driver kvm2 # does not support static ip
 
 minikube config view
 
-minikube start --static-ip 10.10.10.10
+minikube start # starts without static ip support
+
+minikube start --driver docker --static-ip 192.168.100.100
 ```
 
 https://minikube.sigs.k8s.io/docs/handbook/addons/ingress-dns/

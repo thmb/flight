@@ -27,7 +27,7 @@ flight
         README.md (production considerations)
         helm (development)
             workflow -> airflow(dbt) + airbyte
-            storage -> minio + pgadmin + postgres
+            storage -> minio + postgres(pgadmin)
             analytics -> superset
             compute -> spark
             webapp -> nginx + gunicorn|nodejs
@@ -38,14 +38,7 @@ flight
 helm
     charts
         [DONE] nfs (bookworm?)
-        [DONE] postgres (uuid + postgis)
         [DONE] minio
-        [DONE] pgadmin (:latest)
+        [DONE] postgres (uuid + postgis) / pgadmin (:latest)
         [DONE] jupiter (jupyter/pyspark-notebook:latest)
-        pyspark (apache/spark-py)
         *redis, mongodb, ...
-
-
-site (nuxt)
-
-infra (terraform)
