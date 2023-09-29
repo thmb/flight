@@ -1,6 +1,14 @@
-# KUBERNETES
+# KUBERNETES (HELM)
 
-## Minikube Configuration
+workflow -> airflow(dbt) + airbyte
+storage -> minio + postgres(pgadmin)
+analytics -> superset
+compute -> spark
+webapp -> nginx + gunicorn|nodejs
+stream -> kafka (kraft)
+monitor -> prometheus
+
+## DELELOPMENT (Minikube)
 
 https://minikube.sigs.k8s.io/docs/tutorials/static_ip/
 ```console
@@ -32,3 +40,5 @@ minikube addons list
 kubectl port-forward service/postgresql 5432:5432
 
 kubectl get ingress --all-namespaces
+
+## PRODUCTION (Operators and Clouds)
