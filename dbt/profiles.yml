@@ -1,22 +1,22 @@
 transform:
-    target: main
     outputs:
         local:
             type: postgres
-            host: localhost
+            host: postgres.local
             port: 5432
             user: user
-            pass: pass
+            pass: secret
+            dbname: analytics
+            schema: stage
             threads: 1
-            dbname: analytics
-            schema: stage
+        # main:
+        #     type: redshift
+        #     host: [host]
+        #     port: [port]
+        #     user: [user]
+        #     pass: [pass]
+        #     dbname: [dbname]
+        #     schema: [schema]
+        #     threads: [1 or more]
 
-        main:
-            type: redshift
-            host: remotehost
-            port: 5439
-            user: user
-            pass: pass
-            threads: 4
-            dbname: analytics
-            schema: stage
+    target: local
