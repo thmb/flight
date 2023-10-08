@@ -1,32 +1,26 @@
 # FLIGHT
 
 
-## [Nuxt](https://nuxt.com){:target="_blank"}
+## [Nuxt](https://nuxt.com)
 
-## [FastAPI](https://fastapi.tiangolo.com){:target="_blank"}
+## [FastAPI](https://fastapi.tiangolo.com)
 
-## [Scikit-Learn](https://scikit-learn.org){:target="_blank"}
+## [Streamlit](https://streamlit.io)
 
-## [TensorFlow](https://www.tensorflow.org){:target="_blank"}
+## [Spark](https://spark.apache.org)
 
-## [Airflow](https://airflow.apache.org){:target="_blank"}
+## [Airflow](https://airflow.apache.org)
 
-## [Airbyte](https://airbyte.com){:target="_blank"}
+## [Airbyte](https://airbyte.com)
 
-## [DBT](https://www.getdbt.com){:target="_blank"}
+## [DBT](https://www.getdbt.com)
 
-## [Superset](https://superset.apache.org){:target="_blank"}
+## [MinIO](https://min.io)
 
-## [MinIO](https://min.io){:target="_blank"}
+## [PostgreSQL](https://www.postgresql.org)
 
-## [PostgreSQL](https://www.postgresql.org){:target="_blank"}
+## [Kafka](https://kafka.apache.org)
 
-## [Kafka](https://kafka.apache.org){:target="_blank"}
+## [Kubernetes](https://kubernetes.io)
 
-## [Docker](https://www.docker.com){:target="_blank"}
-
-## [Kubernetes](https://kubernetes.io){:target="_blank"}
-
-## [Prometheus](https://prometheus.io){:target="_blank"}
-
-## [Terraform](https://www.terraform.io){:target="_blank"}
+## [Prometheus](https://prometheus.io)
