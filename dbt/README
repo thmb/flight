@@ -1,4 +1,24 @@
-## CREATE A PROJECT
+# [DBT](https://www.getdbt.com)
+
+[Quickstart for dbt Core](https://docs.getdbt.com/quickstarts/manual-install?step=1) from a manual install.
+
+[Alternative quickstarts](https://docs.getdbt.com/quickstarts) include Redshift, BigQuery and Snowflake, among others.
+
+## ANALYSES
+
+## MACROS
+
+## MODELS
+
+## SEEDS
+
+## SNAPSHOTS
+
+## TESTS
+
+## SETUP
+
+### CREATE A PROJECT
 
 docker run --rm -it -v $(pwd):/usr/src python bash
 
@@ -9,7 +29,7 @@ pip install dbt-core dbt-postgres
 dbt init <project_name>
 
 
-## RUN DBT COMMANDS
+### RUN DBT COMMANDS
 
 1. Create a Github token on menu: User -> Settings -> Developer Settings -> Personal Access Token
 
