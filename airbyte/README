@@ -10,7 +10,9 @@ Alternative deployments include [AWS EC2](https://docs.airbyte.com/deploying-air
 
 ## CONNECTIONS
 
-## OCTAVIA
+## SETUP
+
+## CLI (Alternative)
 
 [Octavia](https://github.com/airbytehq/airbyte/tree/master/octavia-cli) is a CLI tool to manage Airbyte configurations in YAML.
 
@@ -23,5 +25,3 @@ alias octavia='docker run --name octavia -i --rm -v .:/home/octavia-project --ne
 ```
 
 [Version control Airbyte configurations with Octavia CLI](https://airbyte.com/tutorials/version-control-airbyte-configurations)
-
-## SETUP
