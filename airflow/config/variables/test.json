@@ -1,6 +1,0 @@
-{
-    "AIRBYTE_HOST": "10.15.4.13",
-    "AIRBYTE_PORT": 8000,
-    "AIRBYTE_USER": "airbyte",
-    "AIRBYTE_PASS": "airbyte"
-}

@@ -10,6 +10,10 @@
 
 ## [Airflow](https://airflow.apache.org)
 
+Open-source platform created by the community to programmatically author, schedule and monitor workflows.
+
+Use standard Python features to create workflows, including date time formats for scheduling and loops to dynamically generate tasks.
+
 ## [Airbyte](https://airbyte.com)
 
 Open-source EL(T) tool that syncs data from applications, APIs and databases to warehouses. It allows to build custom connectors for specific and complex content manipulation.

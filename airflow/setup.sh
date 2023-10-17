@@ -1,9 +1,9 @@
 #!/bin/bash
 
-source ./utils/airflow.sh
+source ./utils.sh
 
 
-variables="./config/variables/test.json"
+variables="./config/variables/airbyte.json"
 
 keys=( $(cat "$variables" | jq -r '. | keys[]') )
 
@@ -13,9 +13,9 @@ do
     create_variable "$key" "$value"
 done
 
-create_connection "./config/connections/airbyte/test.json"
+create_connection "./config/connections/airbyte.json"
 
-create_connection "./config/connections/ssh/test.json"
+create_connection "./config/connections/ssh.json"
 
 
 exit 0 # success

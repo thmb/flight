@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1
 
-FROM apache/airflow:2.6.1-python3.10
+FROM apache/airflow:slim-2.7.2-python3.11
 
 USER airflow
 
