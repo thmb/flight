@@ -1,6 +1,6 @@
 # FLIGHT
 
-## [Nuxt](https://nuxt.com)
+## [Vue](https://vuejs.org/)
 
 ## [FastAPI](https://fastapi.tiangolo.com)
 
@@ -11,6 +11,10 @@
 ## [Airflow](https://airflow.apache.org)
 
 ## [Airbyte](https://airbyte.com)
+
+Open-source EL(T) tool that syncs data from applications, APIs and databases to warehouses. It allows to build custom connectors for specific and complex content manipulation.
+
+Efficient (and easy) to synchronize SQL databases in a reliable way, to fetch data from popular public APIs and to deal with rare formats/dependencies in isolation.
 
 ## [DBT](https://www.getdbt.com)
 

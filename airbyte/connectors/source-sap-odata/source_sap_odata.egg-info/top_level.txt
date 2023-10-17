@@ -1,3 +1,0 @@
-integration_tests
-source_sap_odata
-unit_tests
