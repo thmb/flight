@@ -40,6 +40,10 @@ Replace boilerplate DDL/DML with simple SQL SELECT statements that infer depende
 
 ## [Kafka](https://kafka.apache.org)
 
+Apache Kafka is an open-source distributed event streaming platform for high-performance data pipelines, streaming analytics, data integration, and mission-critical applications.
+
+Deliver messages at network limited throughput with low latencies. Elastically expand and contract storage and processing. Store streams of data safely in a distributed, durable, fault-tolerant cluster.
+
 ## [Kubernetes](https://kubernetes.io)
 
 ### [Certbot](https://certbot.eff.org)
