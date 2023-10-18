@@ -46,8 +46,8 @@ Deliver messages at network limited throughput with low latencies. Elastically e
 
 ## [Kubernetes](https://kubernetes.io)
 
-### [Certbot](https://certbot.eff.org)
+Also known as K8s, is an open-source system for automating deployment, scaling, and management of containerized applications.
 
-### [Prometheus](https://prometheus.io)
+It groups containers that make up an application into logical units for easy management and discovery. Kubernetes can scale without increasing operations team.
 
 ## [Terraform](https://terraform.io)
