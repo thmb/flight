@@ -90,8 +90,6 @@ Some useful charts include (not exaustive list):
 - [Kafka](https://github.com/confluentinc/cp-helm-charts)
 - [Prometheus](https://github.com/prometheus-community/helm-charts/tree/main/charts/kube-prometheus-stack)
 
----
-
 > Helm is like a package manager. It can install applications on your cluster, but it has only some basic logic for updates to its configuration or for version upgrades. You control it through the helm commands and call it when you need it. So it helps you with some tasks, but it is still up to you to run your Kafka cluster day-to-day.
 >
 > Operators on the other hand are (usually) more sophisticated. They don't handle only the installation but also day-2 operations. They essentially try to encode the knowledge and the tasks a human operator running someting like a Kafka cluster would need and do into an application (= the operator). The operator runs all the time in your cluster, and constantly monitors the Kafka cluster to see what is happening in it, if some actions should be taken, and so on. For something like Kafka, the Strimzi operator for example incorporates the rolling update knowledge such as that the controller broker should be rolled last and partition replicas kept in-sync, it deals with upgrades which in Kafka usually consist of multiple rolling updates, handles certificate renewals, and much more.
