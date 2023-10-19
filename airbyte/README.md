@@ -1,4 +1,4 @@
-# [AIRBYTE](https://docs.airbyte.com)
+# [AIRBYTE](https://airbyte.com)
 
 [Deploy Airbyte on Kubernetes using Helm](https://docs.airbyte.com/deploying-airbyte/on-kubernetes-via-helm) to allow scaling sync workloads horizontally. The core components (api server, scheduler, etc) run as deployments while the scheduler launches connector-related pods on different nodes.
 

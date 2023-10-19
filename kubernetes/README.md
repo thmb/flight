@@ -1,4 +1,4 @@
-# KUBERNETES
+# [KUBERNETES](https://kubernetes.io)
 
 [Getting started](https://kubernetes.io/docs/setup) is easy and can be done on a local machine, into the cloud, or datacenter.
 
@@ -66,11 +66,11 @@ Leveraging a managed version of Kubernetes allows developers and businesses to t
 
 In this project the following namespace configuration is recommended as part of the architecture design:
 
+- **webapp** -> nginx + uvicorn
+- **analytics** -> streamlit
 - **workflow** -> airflow(dbt) + airbyte
 - **storage** -> minio + postgres(pgadmin)
-- **analytics** -> streamlit
 - **compute** -> (py)spark
-- **webapp** -> nginx + uvicorn
 - **stream** -> kafka(kraft)
 - **monitor** -> prometheus
 

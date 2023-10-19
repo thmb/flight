@@ -1,3 +1,14 @@
+# [POSTGRES](https://www.postgresql.org)
+
+
+
+## SETUP
+
+
+
+
+
+
 # APPLICATION
 
 Local deployment on Minikube
