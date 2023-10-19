@@ -1,16 +1,25 @@
 # FLIGHT
 
+![Project Architecture](architecture.png)
+
+## OPEN-SOURCE
+
+Commitment...
+
 ## [VueJS](vuejs/README.md)
 
 An approachable, performant and versatile framework for building web user interfaces.
 
-Builds on top of standard HTML, CSS and JavaScript with intuitive API and documentation. Truly reactive, compiler-optimized rendering system. Incrementally adoptable ecosystem that scales between a library and a full-featured framework.
+> Builds on top of standard HTML, CSS and JavaScript with intuitive API and documentation.
+> Incrementally adoptable ecosystem that scales between a library and a full-featured framework.
+> Truly reactive, compiler-optimized rendering system.
 
 ## [FastAPI](fastapi/README.md)
 
-FastAPI is a modern, fast (high-performance), web framework for building APIs with Python 3.8+ based on standard Python type hints.
+Modern and high-performance web framework for building APIs with Python based on standard type hints.
 
-Very high performance, on par with NodeJS and Go (thanks to Starlette and Pydantic). Based on (and fully compatible with) the open standards for APIs: OpenAPI and JSON Schema.
+> Very high performance, on par with NodeJS and Go (thanks to Starlette and Pydantic).
+> Based on (and fully compatible with) the open standards for APIs: OpenAPI and JSON Schema.
 
 ## [Streamlit](streamlit/README.md)
 
@@ -22,25 +31,30 @@ Very high performance, on par with NodeJS and Go (thanks to Starlette and Pydant
 
 ## [Airflow](airflow/README.md)
 
-Open-source platform created by the community to programmatically author, schedule and monitor workflows.
+Platform created by the community to programmatically author, schedule and monitor workflows.
 
-Use standard Python features to create workflows, including date time formats for scheduling and loops to dynamically generate tasks.
+> Use standard Python features to create workflows, including date time formats for scheduling and loops to dynamically generate tasks.
 
 ## [Airbyte](airbyte/README.md)
 
-Open-source EL(T) tool that syncs data from applications, APIs and databases to warehouses. It allows to build custom connectors for specific and complex content manipulation.
+EL(T) tool that syncs data from applications, APIs and databases to warehouses.
 
-Efficient (and easy) to synchronize SQL databases in a reliable way, to fetch data from popular public APIs and to deal with rare formats/dependencies in isolation.
+> Efficient (and easy) to synchronize SQL databases in a reliable way, to fetch data from popular public APIs.
+> Deal with complex formats/dependencies in isolation through custom connectors for specific content manipulation.
 
 ## [DBT](dbt/README.md)
 
-SQL-first transformation workflow that lets teams quickly and collaboratively deploy analytics code following software engineering best practices like modularity, portability, CI/CD, and documentation.
+SQL-first transformation workflow that lets teams deploy analytics code following software engineering best practices.
 
-Replace boilerplate DDL/DML with simple SQL SELECT statements that infer dependencies, build tables and views, and run models in order.
+> Replace boilerplate DDL/DML with simple SQL SELECT statements that infer dependencies, build tables and views, and run models in order. Allows modularity, portability, CI/CD, and documentation.
 
 ## [MinIO](minio/README.md)
 
+High-performance, S3 compatible object store, built for large scale AI/ML, data lake and database workloads.
 
+> Simplicity is the foundation for exascale data infrastructure - both technically and operationally.
+> Turnkey multi-cluster deployment and management, providing freedom to innovate without lock-in or disruption.
+> Native Kubernetes operator integration, it supports major Kubernetes distributions on public, private and edge clouds.
 
 ## [PostgreSQL](postgres/README.md)
 
@@ -48,14 +62,14 @@ Replace boilerplate DDL/DML with simple SQL SELECT statements that infer depende
 
 ## [Kafka](kafka/README.md)
 
-Apache Kafka is an open-source distributed event streaming platform for high-performance data pipelines, streaming analytics, data integration, and mission-critical applications.
+Distributed event streaming platform for high-performance data pipelines, streaming analytics and data integration.
 
-Deliver messages at network limited throughput with low latencies. Elastically expand and contract storage and processing. Store streams of data safely in a distributed, durable, fault-tolerant cluster.
+> Deliver messages at network limited throughput with low latencies. Elastically expand and contract storage and processing. Store streams of data safely in a distributed, durable, fault-tolerant cluster.
 
 ## [Kubernetes](kubernetes/README.md)
 
-Also known as K8s, is an open-source system for automating deployment, scaling, and management of containerized applications.
+Also known as K8s, is a system for automating deployment, scaling, and management of containerized applications.
 
-It groups containers that make up an application into logical units for easy management and discovery. Kubernetes can scale without increasing operations team.
+> Groups containers that make up an application into logical units for easy management and discovery. Kubernetes can scale without increasing operations team.
 
 ## [Terraform](terraform/README.md)
