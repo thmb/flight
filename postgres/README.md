@@ -1,28 +1,9 @@
 # [POSTGRES](https://www.postgresql.org)
 
-
+The database management system is very versatile and can be installed in several operationg systems using native package managers. Another alternative is to use offcial Docker images to run localy in isolation. For the purpose of this project, we will use StackGres, an open-source, full-stack Postgres platform also available as Helm Chart.
 
 ## SETUP
 
-
-
-
-
-
-# APPLICATION
-
-Local deployment on Minikube
-
-# WAREHOUSE
-
-Local deployment on Minikube
-
-## AWS
-
-docker run --rm -ti -v ~/.aws:/root/.aws -v $(pwd):/aws amazon/aws-cli s3 cp s3://aws-cli-docker-demo/hello .
-
-In order to shorten the length of docker commands, you can add the following alias:
-
-alias aws='docker run --rm -ti -v ~/.aws:/root/.aws -v $(pwd):/aws amazon/aws-cli'
-
-aws --version
+```console
+helm install --create-namespace --namespace stackgres stackgres-operator --set-string adminui.service.type=LoadBalancer https://stackgres.io/downloads/stackgres-k8s/stackgres/latest/helm/stackgres-operator.tgz
+```

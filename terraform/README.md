@@ -14,3 +14,14 @@ Terraform configuration files to provision an EKS cluster on AWS.
 Github Repository
 
 https://github.com/hashicorp/learn-terraform-provision-eks-cluster/tree/main
+
+
+
+
+## AWS
+
+In order to shorten the length of docker commands, you can add the following alias:
+
+alias aws='docker run --rm -ti -v ~/.aws:/root/.aws -v $(pwd):/aws amazon/aws-cli'
+
+aws --version

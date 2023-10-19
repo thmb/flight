@@ -58,7 +58,9 @@ High-performance, S3 compatible object store, built for large scale AI/ML, data 
 
 ## [PostgreSQL](postgres/README.md)
 
+Powerful, object-relational database system with a strong reputation for reliability, feature robustness, and performance.
 
+> Latest versions raises its performance, with notable improvements to query parallelism, bulk data loading, and logical replication. Recent new features include more SQL/JSON syntax, new monitoring stats for your workloads, and greater flexibility in defining access control rules for management of policies across large fleets.
 
 ## [Kafka](kafka/README.md)
 
