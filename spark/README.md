@@ -6,6 +6,14 @@ Spark can run on clusters managed by Kubernetes. This feature makes use of nativ
 
 The [Spark Operator](https://github.com/GoogleCloudPlatform/spark-on-k8s-operator) developed by Google is a popular choice.
 
+## [TENSORFLOW](https://www.tensorflow.org)
+
+Free and open-source software library for machine learning and artificial intelligence. It can be used across a range of tasks but has a particular focus on training and inference of deep neural networks.
+
+## [SCIKIT-LEARN](https://scikit-learn.org)
+
+Free software machine learning library that features various classification, regression and clustering algorithms including support-vector machines, random forests, gradient boosting, k-means and DBSCAN.
+
 ## SETUP
 
 The easiest way to install the Kubernetes Operator for Apache Spark is to use the Helm chart.
