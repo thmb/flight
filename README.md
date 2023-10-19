@@ -23,7 +23,11 @@ Modern and high-performance web framework for building APIs with Python based on
 
 ## [Streamlit](streamlit/README.md)
 
+A faster way to build and share data apps. Streamlit turns data scripts into shareable web apps in minutes. All in pure Python.
 
+> Build an app in a few lines of code with a simple API. Then see it automatically update as you iteratively save the source file.
+> Adding a widget is the same as declaring a variable. No need to write a backend, handle HTTP requests, connect a frontend, ...
+> Effortlessly share, manage and deploy your apps, directly from Streamlit Community Cloud.
 
 ## [Spark](spark/README.md)
 
