@@ -84,3 +84,10 @@ Also known as K8s, is a system for automating deployment, scaling, and managemen
 > Groups containers that make up an application into logical units for easy management and discovery. Kubernetes can scale without increasing operations team.
 
 ## [Terraform](terraform/README.md)
+
+Infrastructure automation to provision and manage resources in any cloud or data center.
+
+> - Adopt: Compose infrastructure as code in a Terraform file using HCL to provision resources from any infrastructure provider.
+> - Build: Infrastructure automation workflows to compose, collaborate, reuse, and provision infrastructure as code across IT operations and teams of developers.
+> - Standardize: Establish guardrails for security, compliance, and cost management through role-based access controls, policy enforcement, and audit.
+> - Scale: Extend workflow automation to all teams in the organization with self-service infrastructure as code and integrate with VCS, ITSM, and CI/CD.
