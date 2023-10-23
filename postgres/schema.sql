@@ -1,14 +1,14 @@
 CREATE TABLE "authentications" (
-  "pilot_id" uuid PRIMARY KEY,
+  "user_id" uuid PRIMARY KEY,
   "username" varchar(64) NOT NULL,
   "password" varchar(128) NOT NULL,
   "version" timestamptz NOT NULL DEFAULT (now())
 );
 
 CREATE TABLE "authorizations" (
-  "pilot_id" uuid,
+  "user_id" uuid,
   "role_id" uuid,
-  PRIMARY KEY ("pilot_id", "role_id")
+  PRIMARY KEY ("user_id", "role_id")
 );
 
 CREATE TABLE "roles" (
@@ -18,37 +18,33 @@ CREATE TABLE "roles" (
   "version" timestamptz NOT NULL DEFAULT (now())
 );
 
-CREATE TABLE "pilots" (
+CREATE TABLE "users" (
   "id" uuid PRIMARY KEY DEFAULT (uuid_generate_v4()),
   "name" varchar(64) NOT NULL,
-  "email" varchar(64) NOT NULL,
-  "profile" jsonb,
-  "licenses" varchar(32)[] NOT NULL,
-  "certificate" text,
+  "skills" varchar(32)[] NOT NULL,
+  "address" jsonb,
+  "location" geometry(point,4326),
   "payment" double,
   "version" timestamptz NOT NULL DEFAULT (now())
 );
 
-CREATE TABLE "flights" (
+CREATE TABLE "tasks" (
   "id" uuid PRIMARY KEY DEFAULT (uuid_generate_v4()),
   "previous_id" uuid,
-  "pilot_id" uuid,
-  "aircraft_id" uuid NOT NULL,
-  "origin" varchar(4) NOT NULL,
-  "destination" varchar(4) NOT NULL,
-  "departure" timestamptz,
-  "duration" float,
+  "user_id" uuid,
+  "project_id" uuid NOT NULL,
+  "items" jsonb[] NOT NULL,
+  "effort" interger,
   "version" timestamptz NOT NULL DEFAULT (now())
 );
 
-CREATE TABLE "aircrafts" (
+CREATE TABLE "projects" (
   "id" uuid PRIMARY KEY DEFAULT (uuid_generate_v4()),
-  "type" varchar(4),
-  "company" varchar(64),
-  "capacity" interger,
-  "logbooks" jsonb[] NOT NULL,
-  "maintenance" boolean NOT NULL DEFAULT (false),
-  "location" geometry(point,4326),
+  "title" varchar(64),
+  "report" text,
+  "deadline" timestamptz,
+  "budget" float,
+  "done" boolean NOT NULL DEFAULT (false),
   "version" timestamptz NOT NULL DEFAULT (now())
 );
 
@@ -60,64 +56,74 @@ CREATE INDEX ON "authentications" ("version");
 
 CREATE INDEX ON "roles" ("name");
 
+CREATE INDEX ON "roles" ("permissions");
+
 CREATE INDEX ON "roles" ("version");
 
-CREATE INDEX ON "pilots" ("name");
+CREATE INDEX ON "users" ("name");
 
-CREATE INDEX ON "pilots" ("profile");
+CREATE INDEX ON "users" ("skills");
 
-CREATE INDEX ON "pilots" ("licenses");
+CREATE INDEX ON "users" ("address");
 
-CREATE INDEX ON "pilots" ("payment");
+CREATE INDEX ON "users" ("location");
 
-CREATE INDEX ON "pilots" ("version");
+CREATE INDEX ON "users" ("payment");
 
-CREATE INDEX ON "flights" ("pilot_id");
+CREATE INDEX ON "users" ("version");
 
-CREATE INDEX ON "flights" ("aircraft_id");
+CREATE INDEX ON "tasks" ("previous_id");
 
-CREATE INDEX ON "flights" ("duration");
+CREATE INDEX ON "tasks" ("user_id");
 
-CREATE INDEX ON "flights" ("version");
+CREATE INDEX ON "tasks" ("project_id");
 
-CREATE INDEX ON "aircrafts" ("type");
+CREATE INDEX ON "tasks" ("items");
 
-CREATE INDEX ON "aircrafts" ("company");
+CREATE INDEX ON "tasks" ("effort");
 
-CREATE INDEX ON "aircrafts" ("capacity");
+CREATE INDEX ON "tasks" ("version");
 
-CREATE INDEX ON "aircrafts" ("location");
+CREATE INDEX ON "projects" ("title");
 
-CREATE INDEX ON "aircrafts" ("logbooks");
+CREATE INDEX ON "projects" ("report");
 
-CREATE INDEX ON "aircrafts" ("version");
+CREATE INDEX ON "projects" ("deadline");
 
-COMMENT ON COLUMN "pilots"."profile" IS 'generic information';
+CREATE INDEX ON "projects" ("budget");
 
-COMMENT ON COLUMN "pilots"."licenses" IS 'match requirements';
+CREATE INDEX ON "projects" ("done");
 
-COMMENT ON COLUMN "pilots"."certificate" IS 'medical certificate ';
+CREATE INDEX ON "projects" ("version");
 
-COMMENT ON COLUMN "pilots"."payment" IS 'amount per hour ';
+COMMENT ON COLUMN "users"."skills" IS 'item skill';
 
-COMMENT ON COLUMN "flights"."previous_id" IS 'connection flight';
+COMMENT ON COLUMN "users"."address" IS 'street, number, city, etc';
 
-COMMENT ON COLUMN "flights"."pilot_id" IS 'allows null for project plan';
+COMMENT ON COLUMN "users"."location" IS 'lat, lng';
 
-COMMENT ON COLUMN "flights"."duration" IS 'in hours';
+COMMENT ON COLUMN "users"."payment" IS 'amount per hour ';
 
-COMMENT ON COLUMN "aircrafts"."capacity" IS 'EUR or Bitcoin';
+COMMENT ON COLUMN "tasks"."previous_id" IS 'in sequence';
 
-COMMENT ON COLUMN "aircrafts"."logbooks" IS 'type, date, pilot, content';
+COMMENT ON COLUMN "tasks"."user_id" IS 'allows null for project plan';
 
-ALTER TABLE "authentications" ADD FOREIGN KEY ("pilot_id") REFERENCES "pilots" ("id");
+COMMENT ON COLUMN "tasks"."items" IS 'type, date, skill, content';
 
-ALTER TABLE "authorizations" ADD FOREIGN KEY ("pilot_id") REFERENCES "pilots" ("id");
+COMMENT ON COLUMN "tasks"."effort" IS 'in hours';
+
+COMMENT ON COLUMN "projects"."report" IS 'HTML content';
+
+COMMENT ON COLUMN "projects"."budget" IS 'EUR or Bitcoin';
+
+ALTER TABLE "authentications" ADD FOREIGN KEY ("user_id") REFERENCES "users" ("id");
+
+ALTER TABLE "authorizations" ADD FOREIGN KEY ("user_id") REFERENCES "users" ("id");
 
 ALTER TABLE "authorizations" ADD FOREIGN KEY ("role_id") REFERENCES "roles" ("id");
 
-ALTER TABLE "flights" ADD FOREIGN KEY ("previous_id") REFERENCES "flights" ("id");
+ALTER TABLE "tasks" ADD FOREIGN KEY ("previous_id") REFERENCES "tasks" ("id");
 
-ALTER TABLE "flights" ADD FOREIGN KEY ("pilot_id") REFERENCES "pilots" ("id");
+ALTER TABLE "tasks" ADD FOREIGN KEY ("user_id") REFERENCES "users" ("id");
 
-ALTER TABLE "flights" ADD FOREIGN KEY ("aircraft_id") REFERENCES "aircrafts" ("id");
+ALTER TABLE "tasks" ADD FOREIGN KEY ("project_id") REFERENCES "projects" ("id");
